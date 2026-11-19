@@ -1,0 +1,59 @@
+EvaOmni run: qwen3omni_t_greedy_r2
+Modality ablation run 2 of 2: text only (question and options), all 1027 questions; greedy, max_tokens 2048, missing inputs omitted, repository prompt for this input
+
+[run]
+run_name                  : "qwen3omni_t_greedy_r2"
+description               : "Modality ablation run 2 of 2: text only (question and options), all 1027 questions; greedy, max_tokens 2048, missing inputs omitted, repository prompt for this input"
+started                   : "2026-11-17T16:57:48+01:00"
+command                   : "/home/elisa.negrini/miniconda3/envs/av_env/bin/python custom/run_qwen_omni.py --run-name qwen3omni_t_greedy_r2 --input-mode t --subset full --decoding greedy --max-tokens 2048 --description 'Modality ablation run 2 of 2: text only (question and options), all 1027 questions; greedy, max_tokens 2048, missing inputs omitted, repository prompt for this input'"
+host                      : "coruscant"
+python                    : "3.12.13"
+gpus                      : ["0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB"]
+num_workers               : 1
+gpu_memory_utilization    : 0.8
+batch_size                : 4
+git_commit                : "767f30b268810fdf0544161a41d66d4d701923de"
+originals_unmodified      : true
+git_status_outside_custom : ""
+
+[settings]
+model                     : "Qwen/Qwen3-Omni-30B-A3B-Instruct"
+model_revision            : "26291f793822fb6be9555850f06dfe95f2d7e695"
+engine                    : "vllm.LLM (offline, V1 engine, thinker only)"
+dtype                     : "bfloat16"
+library_versions          : {"vllm": "0.17.1", "torch": "2.10.0", "transformers": "4.57.6", "numpy": "2.2.6", "qwen-omni-utils": "0.0.9", "librosa": "0.11.0", "av": "17.0.0", "decord": "0.6.0"}
+annotation                : "data/test_file.json"
+annotation_sha256         : "b35ab6e7b34b59ea522278d16143ffc27674f1e8246f24673fa02a21df80144b"
+subset                    : "full"
+subset_n                  : 1027
+subset_qa_ids_sha256      : "c7027daa9dd1b806770f733c718a362ca52b5e588c98f1d939a9308bea8d4867"
+video_dir                 : "/home/elisa.negrini/av-viewer/data/EvaOmni/resized_video"
+input_mode                : "t"
+use_audio_in_video        : false
+fps                       : "n/a (no video input)"
+video_frame_processing    : "n/a (no video input)"
+time_encoding             : "n/a (no video input)"
+system_prompt             : null
+message_order             : "question text only"
+prompt_key                : "text_only"
+prompt_sha256             : "e759e9e37d55b76155e569db616ac35a86aa3739498c48b8815e1000dea0bfe6"
+prompt_fill               : "PROMPTS['text_only'].format(question=rec['question'], options=rec['options'])"
+decoding                  : "greedy"
+sampling_params           : {"temperature": 0.0, "max_tokens": 2048}
+seed                      : 1234
+seed_scheme               : "LLM(seed=seed) as in the model card, plus per-request SamplingParams(seed=sha256(f'{seed}-{qa_id}')) when sampling"
+max_model_len             : 65536
+limit_mm_per_prompt       : {"image": 0, "video": 1, "audio": 1}
+mm_processor_cache_gb     : 0
+mm_processor_cache_reason : "vLLM 0.17.1 bug: on a processor-cache hit the video item is None and Qwen3-Omni's _maybe_apply_prompt_updates then treats use_audio_in_video as False (assertion on the audio placeholder). Cache disabled; KV prefix caching stays on."
+enable_prefix_caching     : true
+max_num_seqs              : 1
+max_num_seqs_reason       : "vLLM 0.17.1 bug: merge_interleaved_embeddings (use_audio_in_video) separates video/audio embeddings by token counts only, which breaks when one engine step holds multimodal embeddings of >1 request. max_num_seqs=1 = one request per step (also makes greedy independent of batch composition)."
+long_video_policy         : "no truncation, no frame dropping: prompts longer than max_model_len are recorded as status=error (error_type=prompt_too_long) and score zero"
+stats_only                : false
+modality_ablation         : {"inputs_given": {"video": false, "audio": false, "question_and_options": true}, "missing_inputs": "omitted: no placeholder (no black frames, no silent audio)", "prompt": "repository prompts.py PROMPTS['text_only'] (says which input the model has)", "scoring": "evidence lists the prompt does not ask for are scored as empty (custom/score.py): C.G. <= Acc/2 and B.G. = 0 by construction"}
+
+Finished     : 2026-11-17T17:00:49+01:00  (this session 3.0 min; since first start 3.0 min)
+Questions    : 1027  succeeded 1027  failed 0 
+
+Scored       : 2026-11-17T17:00:49+01:00  -> evaluation/

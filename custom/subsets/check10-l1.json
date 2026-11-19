@@ -1,0 +1,22 @@
+{
+ "name": "check10-l1",
+ "recipe": "Level 1 only, round-robin over capabilities, distinct videos, random.Random(1)",
+ "annotation_sha256": "b35ab6e7b34b59ea522278d16143ffc27674f1e8246f24673fa02a21df80144b",
+ "n": 10,
+ "counts_by_level": {
+  "level1": 10
+ },
+ "n_videos": 10,
+ "qa_ids": [
+  7,
+  45,
+  62,
+  190,
+  348,
+  416,
+  418,
+  459,
+  507,
+  854
+ ]
+}

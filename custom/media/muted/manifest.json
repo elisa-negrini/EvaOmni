@@ -1,0 +1,162 @@
+{
+ "029": {
+  "video_id": "029",
+  "source": "data/resized_video/029.mp4",
+  "muted": "custom/media/muted/029.mp4",
+  "audio_params": {
+   "sample_rate": "48000",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 577.067,
+  "muted_audio_seconds": 577.088,
+  "duration_source": 577.05,
+  "duration_muted": 577.07,
+  "ok": true
+ },
+ "053": {
+  "video_id": "053",
+  "source": "data/resized_video/053.mp4",
+  "muted": "custom/media/muted/053.mp4",
+  "audio_params": {
+   "sample_rate": "48000",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 385.941,
+  "muted_audio_seconds": 385.941,
+  "duration_source": 386.0,
+  "duration_muted": 386.0,
+  "ok": true
+ },
+ "054": {
+  "video_id": "054",
+  "source": "data/resized_video/054.mp4",
+  "muted": "custom/media/muted/054.mp4",
+  "audio_params": {
+   "sample_rate": "48000",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 219.776,
+  "muted_audio_seconds": 219.776,
+  "duration_source": 220.0,
+  "duration_muted": 220.0,
+  "ok": true
+ },
+ "202": {
+  "video_id": "202",
+  "source": "data/resized_video/202.mp4",
+  "muted": "custom/media/muted/202.mp4",
+  "audio_params": {
+   "sample_rate": "48000",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 186.773,
+  "muted_audio_seconds": 186.773,
+  "duration_source": 187.0,
+  "duration_muted": 187.0,
+  "ok": true
+ },
+ "275": {
+  "video_id": "275",
+  "source": "data/resized_video/275.mp4",
+  "muted": "custom/media/muted/275.mp4",
+  "audio_params": {
+   "sample_rate": "48000",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 510.144,
+  "muted_audio_seconds": 510.144,
+  "duration_source": 510.13,
+  "duration_muted": 510.14,
+  "ok": true
+ },
+ "340": {
+  "video_id": "340",
+  "source": "data/resized_video/340.mp4",
+  "muted": "custom/media/muted/340.mp4",
+  "audio_params": {
+   "sample_rate": "48000",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 379.328,
+  "muted_audio_seconds": 379.328,
+  "duration_source": 379.31,
+  "duration_muted": 379.33,
+  "ok": true
+ },
+ "344": {
+  "video_id": "344",
+  "source": "data/resized_video/344.mp4",
+  "muted": "custom/media/muted/344.mp4",
+  "audio_params": {
+   "sample_rate": "48000",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 530.069,
+  "muted_audio_seconds": 530.069,
+  "duration_source": 530.05,
+  "duration_muted": 530.07,
+  "ok": true
+ },
+ "368": {
+  "video_id": "368",
+  "source": "data/resized_video/368.mp4",
+  "muted": "custom/media/muted/368.mp4",
+  "audio_params": {
+   "sample_rate": "48000",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 204.267,
+  "muted_audio_seconds": 204.288,
+  "duration_source": 204.25,
+  "duration_muted": 204.27,
+  "ok": true
+ },
+ "383": {
+  "video_id": "383",
+  "source": "data/resized_video/383.mp4",
+  "muted": "custom/media/muted/383.mp4",
+  "audio_params": {
+   "sample_rate": "48000",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 246.72,
+  "muted_audio_seconds": 246.72,
+  "duration_source": 247.0,
+  "duration_muted": 247.0,
+  "ok": true
+ },
+ "392": {
+  "video_id": "392",
+  "source": "data/resized_video/392.mp4",
+  "muted": "custom/media/muted/392.mp4",
+  "audio_params": {
+   "sample_rate": "44100",
+   "channel_layout": "stereo"
+  },
+  "identical_video_frames": true,
+  "muted_audio_peak": 0.0,
+  "source_audio_seconds": 394.902,
+  "muted_audio_seconds": 394.925,
+  "duration_source": 395.0,
+  "duration_muted": 395.0,
+  "ok": true
+ }
+}

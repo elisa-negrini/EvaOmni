@@ -1,0 +1,59 @@
+EvaOmni evaluation: qwen3omni_av_greedy-json_sub100
+Greedy, 100 questions, output format forced with vLLM structured outputs (JSON schema, [mm:ss,mm:ss], max 100 intervals per list); same prompt. Compare with qwen3omni_av_greedy_sub100
+
+Model    : Qwen/Qwen3-Omni-30B-A3B-Instruct
+Subset   : sub100 (n=100)   decoding: greedy   input: av   seed: 1234
+Scored   : 2026-11-16T17:05:19+01:00
+Paper    : Table 2, Qwen3-Omni-Instruct-30B-A3B (all 1027 questions)
+Values in %. Failed or missing answers count 0. In brackets: ours - paper.
+
+WARNING: 100 questions, not the full benchmark; the paper's numbers are on all 1027 questions.
+
+                      Acc.          C.G.          B.G.      n   Acc. 95% CI
+PAPER
+  Level 1             28.6           5.1           0.6
+  Level 2             22.4           3.4           0.4
+  Level 3             22.2           2.4           0.1
+  Overall             25.2           4.0           0.4
+
+STRICT   (parsed 100, unparsable 0, failed/missing 0)
+  Level 1      26.2 (-2.4)    8.3 (+3.2)    1.7 (+1.1)     42   [15.3, 41.1]
+  Level 2      23.3 (+0.9)  14.0 (+10.6)    3.2 (+2.8)     43   [13.2, 37.7]
+  Level 3      13.3 (-8.9)    1.7 (-0.7)    0.0 (-0.1)     15   [3.7, 37.9]
+  Overall      23.0 (-2.2)    9.8 (+5.8)    2.1 (+1.7)    100   [15.8, 32.2]
+
+PERMISSIVE   (parsed 100, unparsable 0, failed/missing 0)
+  Level 1      26.2 (-2.4)    8.3 (+3.2)    1.7 (+1.1)     42   [15.3, 41.1]
+  Level 2      23.3 (+0.9)  14.0 (+10.6)    3.2 (+2.8)     43   [13.2, 37.7]
+  Level 3      13.3 (-8.9)    1.7 (-0.7)    0.0 (-0.1)     15   [3.7, 37.9]
+  Overall      23.0 (-2.2)    9.8 (+5.8)    2.1 (+1.7)    100   [15.8, 32.2]
+
+PERMISSIVE, NO FREE TEXT   (parsed 100, unparsable 0, failed/missing 0)
+  Level 1      26.2 (-2.4)    8.3 (+3.2)    1.7 (+1.1)     42   [15.3, 41.1]
+  Level 2      23.3 (+0.9)  14.0 (+10.6)    3.2 (+2.8)     43   [13.2, 37.7]
+  Level 3      13.3 (-8.9)    1.7 (-0.7)    0.0 (-0.1)     15   [3.7, 37.9]
+  Overall      23.0 (-2.2)    9.8 (+5.8)    2.1 (+1.7)    100   [15.8, 32.2]
+
+DIAGNOSTIC ONLY: permissive + timestamps without [] accepted   (parsed 100, unparsable 0, failed/missing 0)
+  Level 1      26.2 (-2.4)    8.3 (+3.2)    1.7 (+1.1)     42   [15.3, 41.1]
+  Level 2      23.3 (+0.9)  14.0 (+10.6)    3.2 (+2.8)     43   [13.2, 37.7]
+  Level 3      13.3 (-8.9)    1.7 (-0.7)    0.0 (-0.1)     15   [3.7, 37.9]
+  Overall      23.0 (-2.2)    9.8 (+5.8)    2.1 (+1.7)    100   [15.8, 32.2]
+
+BASELINES (Acc.)
+  Level 1     always 'A'  16.7   chance  12.5
+  Level 2     always 'A'  25.6   chance  12.5
+  Level 3     always 'A'  13.3   chance  12.5
+  Overall     always 'A'  20.0   chance  12.5
+
+DIAGNOSTICS
+  answer sources (permissive): {"json_letter": {"n": 100, "correct": 23}}
+  stop causes: {"natural_stop": 100}
+  format, questions with: {"fully_well_formed": 95, "has_beyond_video_end": 5}
+  format, timestamps: {"strict_ok": 1811, "beyond_video_end": 345}
+  letters, overall counts:
+    gt                       {"A": 20, "B": 16, "C": 10, "D": 11, "E": 12, "F": 13, "G": 11, "H": 7}
+    strict                   {"A": 11, "B": 5, "C": 13, "D": 10, "E": 13, "F": 6, "G": 24, "H": 18}
+    permissive               {"A": 11, "B": 5, "C": 13, "D": 10, "E": 13, "F": 6, "G": 24, "H": 18}
+    permissive_no_free_text  {"A": 11, "B": 5, "C": 13, "D": 10, "E": 13, "F": 6, "G": 24, "H": 18}
+    diag_no_brackets         {"A": 11, "B": 5, "C": 13, "D": 10, "E": 13, "F": 6, "G": 24, "H": 18}

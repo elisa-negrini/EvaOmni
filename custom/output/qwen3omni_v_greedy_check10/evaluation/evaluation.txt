@@ -1,0 +1,62 @@
+EvaOmni evaluation: qwen3omni_v_greedy_check10
+Test of the modality ablation input 'v' (missing inputs omitted, repository prompt for this input), greedy, max_tokens 2048, 10 questions
+
+Model    : Qwen/Qwen3-Omni-30B-A3B-Instruct
+Subset   : check10-l1 (n=10)   decoding: greedy   input: v   seed: 1234
+Scored   : 2026-11-17T16:49:17+01:00
+Paper    : Table 2, Qwen3-Omni-Instruct-30B-A3B (all 1027 questions)
+INPUT    : v only (video frames, no audio). The PAPER rows are Table 2 (video+audio input),
+           shown for reference only, no differences printed.
+           Paper Table 6(d), Qwen3-Omni-Instruct-30B-A3B, this input: 12.5 (Acc. only; a question counts only if correct in BOTH of two runs: custom/tools/both_runs_acc.py RUN1 RUN2)
+           Evidence lists the prompt does not ask for are scored as empty: C.G. <= Acc./2, B.G. = 0.
+Values in %. Failed or missing answers count 0.
+
+WARNING: 10 questions, not the full benchmark; the paper's numbers are on all 1027 questions.
+
+                      Acc.          C.G.          B.G.      n   Acc. 95% CI
+PAPER
+  Level 1             28.6           5.1           0.6
+  Level 2             22.4           3.4           0.4
+  Level 3             22.2           2.4           0.1
+  Overall             25.2           4.0           0.4
+
+STRICT   (parsed 2, unparsable 8, failed/missing 0)
+  Level 1             10.0           0.0           0.0     10   [1.8, 40.4]
+  Overall             10.0           0.0           0.0     10   [1.8, 40.4]
+
+PERMISSIVE   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1             30.0           0.0           0.0     10   [10.8, 60.3]
+  Overall             30.0           0.0           0.0     10   [10.8, 60.3]
+
+PERMISSIVE, NO FREE TEXT   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1             30.0           0.0           0.0     10   [10.8, 60.3]
+  Overall             30.0           0.0           0.0     10   [10.8, 60.3]
+
+DIAGNOSTIC ONLY: permissive + timestamps without [] accepted   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1             30.0           5.0           0.0     10   [10.8, 60.3]
+  Overall             30.0           5.0           0.0     10   [10.8, 60.3]
+
+GROUNDING OF THE GIVEN MODALITY (visual) ALONE
+  cov-grounded = mean(correct x coverage), IoU-grounded = mean(correct x IoU) on this modality;
+  'if correct' = mean coverage / IoU over the correct answers only
+                               Acc.  cov-grnd  IoU-grnd  cov|ok  IoU|ok
+  strict         Level 1       10.0       0.0       0.0     0.0     0.0
+  strict         Overall       10.0       0.0       0.0     0.0     0.0
+  diag_no_bracke Level 1       30.0      10.0       1.2    33.3     4.2
+  diag_no_bracke Overall       30.0      10.0       1.2    33.3     4.2
+
+BASELINES (Acc.)
+  Level 1     always 'A'  10.0   chance  12.5
+  Overall     always 'A'  10.0   chance  12.5
+
+DIAGNOSTICS
+  answer sources (permissive): {"json_letter": {"n": 10, "correct": 3}}
+  stop causes: {"natural_stop": 10}
+  format, questions with: {"missing_audio_evidence_list": 10, "has_missing_brackets": 7, "has_single_point": 1}
+  format, timestamps: {"missing_brackets": 7, "strict_ok": 2, "single_point": 1}
+  letters, overall counts:
+    gt                       {"A": 1, "B": 1, "C": 1, "E": 1, "F": 2, "G": 3, "H": 1}
+    strict                   {"E": 1, "H": 1, "none": 8}
+    permissive               {"A": 1, "E": 2, "F": 1, "G": 4, "H": 2}
+    permissive_no_free_text  {"A": 1, "E": 2, "F": 1, "G": 4, "H": 2}
+    diag_no_brackets         {"A": 1, "E": 2, "F": 1, "G": 4, "H": 2}

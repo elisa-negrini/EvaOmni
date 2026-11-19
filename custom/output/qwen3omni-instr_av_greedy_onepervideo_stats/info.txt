@@ -1,0 +1,29 @@
+Run name     : qwen3omni-instr_av_greedy_onepervideo_stats
+Description  : Step 2b: input statistics and truncation on all 392 videos (one question per video, 1 output token, not scored)
+Started      : 2026-11-13T12:06:54+01:00
+Command      : /home/elisa.negrini/miniconda3/envs/av_env/bin/python custom/run_qwen_omni.py --run-name qwen3omni-instr_av_greedy_onepervideo_stats --description 'Step 2b: input statistics and truncation on all 392 videos (one question per video, 1 output token, not scored)' --subset onepervideo --input-mode av --decoding greedy --stats-only --gpus 0,1,2,3
+Host         : coruscant
+Repo commit  : 767f30b268810fdf0544161a41d66d4d701923de
+Originals unmodified (git status outside custom/ is empty): True
+git status   : ?? custom/
+Model        : Qwen/Qwen3-Omni-30B-A3B-Instruct @ 26291f793822fb6be9555850f06dfe95f2d7e695
+Engine       : vllm.LLM (offline, V1 engine, thinker only), dtype bfloat16
+Versions     : vllm 0.17.1, torch 2.10.0, transformers 4.57.6, numpy 2.2.6, qwen-omni-utils 0.0.9, librosa 0.11.0, av 17.0.0, decord 0.6.0
+Python       : 3.12.13
+GPUs         : 0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB | 1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB | 2, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB | 3, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB
+Decoding     : greedy {"temperature": 0.0, "max_tokens": 16384}; seed 1234 (LLM(seed=seed) as in the model card, plus per-request SamplingParams(seed=sha256(f'{seed}-{qa_id}')) when sampling)
+max_model_len: 65536   long videos: no truncation, no frame dropping: prompts longer than max_model_len are recorded as status=error (error_type=prompt_too_long) and score zero
+FPS          : 1.0   use_audio_in_video: True
+Video dir    : /home/elisa.negrini/av-viewer/data/EvaOmni/resized_video
+Input mode   : av   system prompt: None   order: video first, then question text
+Prompt       : key 'video_audio' sha256 eb7a65b9e0b541b77d935d3631f12fde2f5d16c76f50b3e503abacbcf5e69149
+Subset       : onepervideo (n=392, qa_ids sha256 73246aac67d13194...)
+Stats only   : True
+vLLM runtime : gpu_memory_utilization 0.8, max_num_seqs 1, batch_size 4, workers 4
+Finished     : 2026-11-13T12:16:25+01:00  (this session 9.5 min; since first start 9.5 min)
+Questions    : 392  succeeded 391  failed 1 {'prompt_too_long': 1}
+
+======================================================================
+Scored       : 2026-11-13T12:16:25+01:00
+Input stats  : {"n_rows": 392, "n_ok": 391, "errors_by_type": {"prompt_too_long": 1}, "prompt_tokens_min_max": [4945, 62265], "video_tokens_min_max": [3915, 52800], "audio_tokens_min_max": [768, 10125], "frames_min_max": [58, 768], "video_seconds_min_max": [59.01, 779.0], "audio_seconds_min_max": [59.01, 778.83], "context_fraction_max": 0.95, "n_truncated": 0}
+Stats-only run: no answer scoring.

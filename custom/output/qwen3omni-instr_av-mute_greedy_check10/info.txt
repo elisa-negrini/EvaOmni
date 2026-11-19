@@ -1,0 +1,67 @@
+Run name     : qwen3omni-instr_av-mute_greedy_check10
+Description  : Step 2a: audio check, same 10 questions, videos with silent audio track (custom/media/muted)
+Started      : 2026-11-13T11:54:53+01:00
+Command      : /home/elisa.negrini/miniconda3/envs/av_env/bin/python custom/run_qwen_omni.py --run-name qwen3omni-instr_av-mute_greedy_check10 --description 'Step 2a: audio check, same 10 questions, videos with silent audio track (custom/media/muted)' --subset check10-l1 --input-mode av-mute --decoding greedy --gpus 1
+Host         : coruscant
+Repo commit  : 767f30b268810fdf0544161a41d66d4d701923de
+Originals unmodified (git status outside custom/ is empty): True
+git status   : ?? custom/
+Model        : Qwen/Qwen3-Omni-30B-A3B-Instruct @ 26291f793822fb6be9555850f06dfe95f2d7e695
+Engine       : vllm.LLM (offline, V1 engine, thinker only), dtype bfloat16
+Versions     : vllm 0.17.1, torch 2.10.0, transformers 4.57.6, numpy 2.2.6, qwen-omni-utils 0.0.9, librosa 0.11.0, av 17.0.0, decord 0.6.0
+Python       : 3.12.13
+GPUs         : 1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB
+Decoding     : greedy {"temperature": 0.0, "max_tokens": 16384}; seed 1234 (LLM(seed=seed) as in the model card, plus per-request SamplingParams(seed=sha256(f'{seed}-{qa_id}')) when sampling)
+max_model_len: 65536   long videos: no truncation, no frame dropping: prompts longer than max_model_len are recorded as status=error (error_type=prompt_too_long) and score zero
+FPS          : 1.0   use_audio_in_video: True
+Video dir    : /home/elisa.negrini/EvaOmni/custom/media/muted
+Input mode   : av-mute   system prompt: None   order: video first, then question text
+Prompt       : key 'video_audio' sha256 eb7a65b9e0b541b77d935d3631f12fde2f5d16c76f50b3e503abacbcf5e69149
+Subset       : check10-l1 (n=10, qa_ids sha256 e0ac58b16f6f5fb3...)
+Stats only   : False
+vLLM runtime : gpu_memory_utilization 0.8, max_num_seqs 1, batch_size 4, workers 1
+Finished     : 2026-11-13T11:59:23+01:00  (this session 4.5 min; since first start 4.5 min)
+Questions    : 10  succeeded 10  failed 0 
+
+======================================================================
+Scored       : 2026-11-13T11:59:23+01:00
+Input stats  : {"n_rows": 10, "n_ok": 10, "errors_by_type": {}, "prompt_tokens_min_max": [15200, 46770], "video_tokens_min_max": [12555, 38880], "audio_tokens_min_max": [2428, 7502], "frames_min_max": [186, 576], "video_seconds_min_max": [187.0, 577.07], "audio_seconds_min_max": [186.77, 577.07], "context_fraction_max": 0.714, "n_truncated": 0}
+[strict]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       20.0     0.0     0.0   [ 5.7, 51.0]    10
+Overall       20.0     0.0     0.0   [ 5.7, 51.0]    10
+[permissive]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       20.0     0.0     0.0   [ 5.7, 51.0]    10
+Overall       20.0     0.0     0.0   [ 5.7, 51.0]    10
+[permissive_no_free_text]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       20.0     0.0     0.0   [ 5.7, 51.0]    10
+Overall       20.0     0.0     0.0   [ 5.7, 51.0]    10
+Answer sources (permissive): {"free_text": {"n": 1, "letters": {"H": 1}}, "json_letter": {"n": 9, "letters": {"B": 1, "E": 2, "G": 4, "H": 2}}}
+Predicted letters (strict, overall): {"B": 1, "E": 2, "G": 3, "H": 2, "none": 2}
+
+======================================================================
+Scored       : 2026-11-13T16:03:36+01:00
+Input stats  : {"n_rows": 10, "n_ok": 10, "errors_by_type": {}, "prompt_tokens_min_max": [15200, 46770], "video_tokens_min_max": [12555, 38880], "audio_tokens_min_max": [2428, 7502], "frames_min_max": [186, 576], "video_seconds_min_max": [187.0, 577.07], "audio_seconds_min_max": [186.77, 577.07], "context_fraction_max": 0.714, "n_truncated": 0}
+[strict]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       20.0     0.0     0.0   [ 5.7, 51.0]    10
+Overall       20.0     0.0     0.0   [ 5.7, 51.0]    10
+[permissive]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       20.0     0.0     0.0   [ 5.7, 51.0]    10
+Overall       20.0     0.0     0.0   [ 5.7, 51.0]    10
+[permissive_no_free_text]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       20.0     0.0     0.0   [ 5.7, 51.0]    10
+Overall       20.0     0.0     0.0   [ 5.7, 51.0]    10
+[diag_no_brackets DIAGNOSTIC ONLY]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       20.0     0.0     0.0   [ 5.7, 51.0]    10
+Overall       20.0     0.0     0.0   [ 5.7, 51.0]    10
+Answer sources (permissive): {"json_letter": {"n": 9, "letters": {"B": 1, "E": 2, "G": 4, "H": 2}}, "truncated_json": {"n": 1, "letters": {"H": 1}}}
+Predicted letters (strict, overall): {"B": 1, "E": 2, "G": 3, "H": 2, "none": 2}
+Stop causes: {"natural_stop": 9, "length": 1}
+Format, questions with: {"fully_well_formed": 8, "has_missing_brackets": 1, "generation_cut_length": 1, "json_truncated": 1}
+Format, timestamps: {"strict_ok": 16, "missing_brackets": 2}

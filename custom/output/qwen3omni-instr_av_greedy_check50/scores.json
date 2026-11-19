@@ -1,0 +1,5041 @@
+{
+ "results_source": "custom/output/qwen3omni-instr_av_greedy_check50",
+ "n_questions": 50,
+ "n_result_rows_in_scope": 50,
+ "result_rows_out_of_scope": [],
+ "strict": {
+  "summary": {
+   "Level 1": {
+    "n": 21,
+    "Acc.": 33.333333333333336,
+    "C.G.": 21.428571428571427,
+    "B.G.": 8.3982683982684,
+    "Mean": 11.017316017316016,
+    "Thr@0.3": 19.047619047619047,
+    "Thr@0.5": 9.523809523809524,
+    "Thr@0.7": 4.761904761904762,
+    "Acc. 95% CI": [
+     17.19475251228901,
+     54.62654818728245
+    ]
+   },
+   "Level 2": {
+    "n": 21,
+    "Acc.": 14.285714285714286,
+    "C.G.": 4.761904761904762,
+    "B.G.": 1.587301587301587,
+    "Mean": 1.587301587301587,
+    "Thr@0.3": 4.761904761904762,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     4.981012460790432,
+     34.636060466862695
+    ]
+   },
+   "Level 3": {
+    "n": 8,
+    "Acc.": 12.5,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     2.2417491199971913,
+     47.08881850560837
+    ]
+   },
+   "Overall": {
+    "n": 50,
+    "Acc.": 22.0,
+    "C.G.": 11.0,
+    "B.G.": 4.193939393939393,
+    "Mean": 5.293939393939394,
+    "Thr@0.3": 10.0,
+    "Thr@0.5": 4.0,
+    "Thr@0.7": 2.0,
+    "Acc. 95% CI": [
+     12.75391591451957,
+     35.24154969548282
+    ]
+   }
+  },
+  "diagnostics": {
+   "ok": 33,
+   "infer_error_or_missing": 0,
+   "parse_fail": 17,
+   "notes": {
+    "34": "ValueError: Invalid timestamp: '01:14,01:15'",
+    "72": "ValueError: Invalid timestamp: '03:51,03:52'",
+    "83": "ValueError: Invalid timestamp: '01:55,01:56'",
+    "117": "ValueError: Invalid timestamp: '01:45,01:50'",
+    "134": "ValueError: Invalid timestamp: '08:00,08:00'",
+    "187": "ValueError: Invalid timestamp: '03:15,03:17'",
+    "273": "JSONDecodeError: Unterminated string starting at: line 1491 column 14 (char 34256)",
+    "278": "ValueError: Invalid timestamp: '00:52,00:55'",
+    "305": "ValueError: Invalid timestamp: '05:07,05:10'",
+    "426": "ValueError: Invalid timestamp: '01:14,01:15'",
+    "493": "ValueError: Invalid timestamp: '03:25,03:28'",
+    "495": "ValueError: Invalid timestamp: '04:15,04:18'",
+    "517": "JSONDecodeError: Unterminated string starting at: line 966 column 14 (char 27953)",
+    "621": "ValueError: Invalid timestamp: '02:50,02:51'",
+    "882": "ValueError: Invalid timestamp: '03:41,03:42'",
+    "980": "ValueError: Invalid timestamp: '03:42,03:43'",
+    "983": "JSONDecodeError: Expecting value: line 913 column 13 (char 28233)"
+   }
+  },
+  "pred_letter_distribution": {
+   "Overall": {
+    "A": 3,
+    "B": 4,
+    "C": 5,
+    "D": 2,
+    "E": 7,
+    "F": 3,
+    "G": 5,
+    "H": 4,
+    "none": 17
+   },
+   "Level 1": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "E": 4,
+    "F": 1,
+    "G": 4,
+    "H": 1,
+    "none": 5
+   },
+   "Level 2": {
+    "B": 2,
+    "C": 3,
+    "D": 1,
+    "E": 3,
+    "F": 2,
+    "G": 1,
+    "H": 3,
+    "none": 6
+   },
+   "Level 3": {
+    "A": 1,
+    "D": 1,
+    "none": 6
+   }
+  },
+  "invalid_predictions": [],
+  "per_question": [
+   {
+    "qa_id": 34,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 59,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 72,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 76,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.16666666666666666,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.5,
+     "B.G.": 0.0,
+     "Mean": 0.16666666666666666,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 81,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 83,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 105,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 106,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 117,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 134,
+    "level": 2,
+    "capability": "Temporal Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 146,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.25,
+    "visual_iou": 0.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.125,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 180,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 187,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 241,
+    "level": 2,
+    "capability": "Atmosphere Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 242,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 244,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 257,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 273,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 278,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 294,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.6666666666666666,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.5,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.3333333333333333,
+     "Mean": 0.5,
+     "Thr@0.3": 1,
+     "Thr@0.5": 1,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 305,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 375,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 426,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 488,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 493,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 495,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 502,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.6666666666666666,
+    "visual_iou": 1.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.8333333333333333,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.6666666666666666,
+     "Mean": 0.8333333333333333,
+     "Thr@0.3": 1,
+     "Thr@0.5": 1,
+     "Thr@0.7": 1
+    }
+   },
+   {
+    "qa_id": 517,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 525,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 546,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 556,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 583,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 621,
+    "level": 2,
+    "capability": "Conditional Counting",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 652,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.5,
+    "visual_iou": 0.4,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.45,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.4,
+     "Mean": 0.45,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 702,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.36363636363636365,
+    "visual_iou": 0.36363636363636365,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.36363636363636365,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.36363636363636365,
+     "Mean": 0.36363636363636365,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 717,
+    "level": 2,
+    "capability": "Conditional Counting",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 729,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.42857142857142855,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.38095238095238093,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 745,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.3333333333333333,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.3333333333333333,
+     "Mean": 0.3333333333333333,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 775,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 786,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 810,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.2777777777777778,
+    "visual_iou": 0.2777777777777778,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.2777777777777778,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 855,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 882,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 889,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 923,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 965,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 980,
+    "level": 2,
+    "capability": "Spatial Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 983,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 1000,
+    "level": 2,
+    "capability": "Temporal Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 1006,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   }
+  ],
+  "by_capability": {
+   "Temporal Alignment": {
+    "count": 11,
+    "Acc.": 27.272727272727273,
+    "C.G.": 18.181818181818183,
+    "B.G.": 9.696969696969697,
+    "Mean": 11.666666666666664,
+    "Thr@0.3": 18.181818181818183,
+    "Thr@0.5": 9.090909090909092,
+    "Thr@0.7": 9.090909090909092
+   },
+   "Intent Understanding": {
+    "count": 7,
+    "Acc.": 28.571428571428573,
+    "C.G.": 14.285714285714286,
+    "B.G.": 4.761904761904761,
+    "Mean": 4.761904761904761,
+    "Thr@0.3": 14.285714285714286,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 5,
+    "Acc.": 60.0,
+    "C.G.": 30.0,
+    "B.G.": 7.272727272727273,
+    "Mean": 10.606060606060606,
+    "Thr@0.3": 20.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Emotional Intelligence": {
+    "count": 4,
+    "Acc.": 25.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Multi-hop Reasoning": {
+    "count": 4,
+    "Acc.": 25.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Multi-Evidence Chain": {
+    "count": 4,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Understanding": {
+    "count": 2,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Event Binding": {
+    "count": 5,
+    "Acc.": 20.0,
+    "C.G.": 20.0,
+    "B.G.": 6.666666666666666,
+    "Mean": 10.0,
+    "Thr@0.3": 20.0,
+    "Thr@0.5": 20.0,
+    "Thr@0.7": 0.0
+   },
+   "Atmosphere Understanding": {
+    "count": 1,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Causal Reasoning": {
+    "count": 4,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Conditional Counting": {
+    "count": 2,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Spatial Understanding": {
+    "count": 1,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  }
+ },
+ "permissive": {
+  "summary": {
+   "Level 1": {
+    "n": 21,
+    "Acc.": 38.095238095238095,
+    "C.G.": 21.428571428571427,
+    "B.G.": 8.3982683982684,
+    "Mean": 11.017316017316016,
+    "Thr@0.3": 19.047619047619047,
+    "Thr@0.5": 9.523809523809524,
+    "Thr@0.7": 4.761904761904762,
+    "Acc. 95% CI": [
+     20.75101126400911,
+     59.12134637854193
+    ]
+   },
+   "Level 2": {
+    "n": 21,
+    "Acc.": 19.047619047619047,
+    "C.G.": 4.761904761904762,
+    "B.G.": 1.587301587301587,
+    "Mean": 1.587301587301587,
+    "Thr@0.3": 4.761904761904762,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     7.667564999345375,
+     40.000564871287324
+    ]
+   },
+   "Level 3": {
+    "n": 8,
+    "Acc.": 37.5,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     13.684428473912286,
+     69.4257607346229
+    ]
+   },
+   "Overall": {
+    "n": 50,
+    "Acc.": 30.0,
+    "C.G.": 11.0,
+    "B.G.": 4.193939393939393,
+    "Mean": 5.293939393939394,
+    "Thr@0.3": 10.0,
+    "Thr@0.5": 4.0,
+    "Thr@0.7": 2.0,
+    "Acc. 95% CI": [
+     19.10355343030571,
+     43.75035057683886
+    ]
+   }
+  },
+  "diagnostics": {
+   "ok": 50,
+   "infer_error_or_missing": 0,
+   "parse_fail": 0,
+   "notes": {
+    "34": "dropped 2 unreadable interval(s)",
+    "72": "dropped 2 unreadable interval(s)",
+    "83": "dropped 2 unreadable interval(s)",
+    "117": "dropped 2 unreadable interval(s)",
+    "134": "dropped 2 unreadable interval(s)",
+    "187": "dropped 6 unreadable interval(s)",
+    "273": "non-JSON output, only letter extracted",
+    "278": "dropped 8 unreadable interval(s)",
+    "305": "dropped 2 unreadable interval(s)",
+    "426": "dropped 4 unreadable interval(s)",
+    "493": "dropped 4 unreadable interval(s)",
+    "495": "dropped 2 unreadable interval(s)",
+    "517": "non-JSON output, only letter extracted",
+    "621": "dropped 2 unreadable interval(s)",
+    "882": "dropped 2 unreadable interval(s)",
+    "980": "dropped 2 unreadable interval(s)",
+    "983": "non-JSON output, only letter extracted"
+   }
+  },
+  "pred_letter_distribution": {
+   "Overall": {
+    "A": 5,
+    "B": 5,
+    "C": 7,
+    "D": 2,
+    "E": 9,
+    "F": 6,
+    "G": 9,
+    "H": 7
+   },
+   "Level 1": {
+    "A": 2,
+    "B": 3,
+    "C": 2,
+    "E": 5,
+    "F": 2,
+    "G": 5,
+    "H": 2
+   },
+   "Level 2": {
+    "A": 1,
+    "B": 2,
+    "C": 4,
+    "D": 1,
+    "E": 4,
+    "F": 3,
+    "G": 2,
+    "H": 4
+   },
+   "Level 3": {
+    "A": 2,
+    "C": 1,
+    "D": 1,
+    "F": 1,
+    "G": 2,
+    "H": 1
+   }
+  },
+  "invalid_predictions": [],
+  "per_question": [
+   {
+    "qa_id": 34,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 59,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 72,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 76,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.16666666666666666,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.5,
+     "B.G.": 0.0,
+     "Mean": 0.16666666666666666,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 81,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 83,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 105,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 106,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 117,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 134,
+    "level": 2,
+    "capability": "Temporal Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 146,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.25,
+    "visual_iou": 0.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.125,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 180,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 187,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 241,
+    "level": 2,
+    "capability": "Atmosphere Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 242,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 244,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 257,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 273,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 278,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 294,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.6666666666666666,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.5,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.3333333333333333,
+     "Mean": 0.5,
+     "Thr@0.3": 1,
+     "Thr@0.5": 1,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 305,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 375,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 426,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 488,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 493,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 495,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 502,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.6666666666666666,
+    "visual_iou": 1.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.8333333333333333,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.6666666666666666,
+     "Mean": 0.8333333333333333,
+     "Thr@0.3": 1,
+     "Thr@0.5": 1,
+     "Thr@0.7": 1
+    }
+   },
+   {
+    "qa_id": 517,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 525,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 546,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 556,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 583,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 621,
+    "level": 2,
+    "capability": "Conditional Counting",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 652,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.5,
+    "visual_iou": 0.4,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.45,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.4,
+     "Mean": 0.45,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 702,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.36363636363636365,
+    "visual_iou": 0.36363636363636365,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.36363636363636365,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.36363636363636365,
+     "Mean": 0.36363636363636365,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 717,
+    "level": 2,
+    "capability": "Conditional Counting",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 729,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.42857142857142855,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.38095238095238093,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 745,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.3333333333333333,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.3333333333333333,
+     "Mean": 0.3333333333333333,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 775,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 786,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 810,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.2777777777777778,
+    "visual_iou": 0.2777777777777778,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.2777777777777778,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 855,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 882,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 889,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 923,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 965,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 980,
+    "level": 2,
+    "capability": "Spatial Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 983,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 1000,
+    "level": 2,
+    "capability": "Temporal Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 1006,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   }
+  ],
+  "by_capability": {
+   "Temporal Alignment": {
+    "count": 11,
+    "Acc.": 36.36363636363637,
+    "C.G.": 18.181818181818183,
+    "B.G.": 9.696969696969697,
+    "Mean": 11.666666666666664,
+    "Thr@0.3": 18.181818181818183,
+    "Thr@0.5": 9.090909090909092,
+    "Thr@0.7": 9.090909090909092
+   },
+   "Intent Understanding": {
+    "count": 7,
+    "Acc.": 42.857142857142854,
+    "C.G.": 14.285714285714286,
+    "B.G.": 4.761904761904761,
+    "Mean": 4.761904761904761,
+    "Thr@0.3": 14.285714285714286,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 5,
+    "Acc.": 60.0,
+    "C.G.": 30.0,
+    "B.G.": 7.272727272727273,
+    "Mean": 10.606060606060606,
+    "Thr@0.3": 20.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Emotional Intelligence": {
+    "count": 4,
+    "Acc.": 25.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Multi-hop Reasoning": {
+    "count": 4,
+    "Acc.": 50.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Multi-Evidence Chain": {
+    "count": 4,
+    "Acc.": 25.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Understanding": {
+    "count": 2,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Event Binding": {
+    "count": 5,
+    "Acc.": 20.0,
+    "C.G.": 20.0,
+    "B.G.": 6.666666666666666,
+    "Mean": 10.0,
+    "Thr@0.3": 20.0,
+    "Thr@0.5": 20.0,
+    "Thr@0.7": 0.0
+   },
+   "Atmosphere Understanding": {
+    "count": 1,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Causal Reasoning": {
+    "count": 4,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Conditional Counting": {
+    "count": 2,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Spatial Understanding": {
+    "count": 1,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  }
+ },
+ "permissive_no_free_text": {
+  "summary": {
+   "Level 1": {
+    "n": 21,
+    "Acc.": 38.095238095238095,
+    "C.G.": 21.428571428571427,
+    "B.G.": 8.3982683982684,
+    "Mean": 11.017316017316016,
+    "Thr@0.3": 19.047619047619047,
+    "Thr@0.5": 9.523809523809524,
+    "Thr@0.7": 4.761904761904762,
+    "Acc. 95% CI": [
+     20.75101126400911,
+     59.12134637854193
+    ]
+   },
+   "Level 2": {
+    "n": 21,
+    "Acc.": 19.047619047619047,
+    "C.G.": 4.761904761904762,
+    "B.G.": 1.587301587301587,
+    "Mean": 1.587301587301587,
+    "Thr@0.3": 4.761904761904762,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     7.667564999345375,
+     40.000564871287324
+    ]
+   },
+   "Level 3": {
+    "n": 8,
+    "Acc.": 37.5,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     13.684428473912286,
+     69.4257607346229
+    ]
+   },
+   "Overall": {
+    "n": 50,
+    "Acc.": 30.0,
+    "C.G.": 11.0,
+    "B.G.": 4.193939393939393,
+    "Mean": 5.293939393939394,
+    "Thr@0.3": 10.0,
+    "Thr@0.5": 4.0,
+    "Thr@0.7": 2.0,
+    "Acc. 95% CI": [
+     19.10355343030571,
+     43.75035057683886
+    ]
+   }
+  },
+  "diagnostics": {
+   "ok": 50,
+   "infer_error_or_missing": 0,
+   "parse_fail": 0,
+   "notes": {
+    "34": "dropped 2 unreadable interval(s)",
+    "72": "dropped 2 unreadable interval(s)",
+    "83": "dropped 2 unreadable interval(s)",
+    "117": "dropped 2 unreadable interval(s)",
+    "134": "dropped 2 unreadable interval(s)",
+    "187": "dropped 6 unreadable interval(s)",
+    "273": "non-JSON output, only letter extracted",
+    "278": "dropped 8 unreadable interval(s)",
+    "305": "dropped 2 unreadable interval(s)",
+    "426": "dropped 4 unreadable interval(s)",
+    "493": "dropped 4 unreadable interval(s)",
+    "495": "dropped 2 unreadable interval(s)",
+    "517": "non-JSON output, only letter extracted",
+    "621": "dropped 2 unreadable interval(s)",
+    "882": "dropped 2 unreadable interval(s)",
+    "980": "dropped 2 unreadable interval(s)",
+    "983": "non-JSON output, only letter extracted"
+   }
+  },
+  "pred_letter_distribution": {
+   "Overall": {
+    "A": 5,
+    "B": 5,
+    "C": 7,
+    "D": 2,
+    "E": 9,
+    "F": 6,
+    "G": 9,
+    "H": 7
+   },
+   "Level 1": {
+    "A": 2,
+    "B": 3,
+    "C": 2,
+    "E": 5,
+    "F": 2,
+    "G": 5,
+    "H": 2
+   },
+   "Level 2": {
+    "A": 1,
+    "B": 2,
+    "C": 4,
+    "D": 1,
+    "E": 4,
+    "F": 3,
+    "G": 2,
+    "H": 4
+   },
+   "Level 3": {
+    "A": 2,
+    "C": 1,
+    "D": 1,
+    "F": 1,
+    "G": 2,
+    "H": 1
+   }
+  },
+  "invalid_predictions": [],
+  "per_question": [
+   {
+    "qa_id": 34,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 59,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 72,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 76,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.16666666666666666,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.5,
+     "B.G.": 0.0,
+     "Mean": 0.16666666666666666,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 81,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 83,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 105,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 106,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 117,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 134,
+    "level": 2,
+    "capability": "Temporal Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 146,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.25,
+    "visual_iou": 0.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.125,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 180,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 187,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 241,
+    "level": 2,
+    "capability": "Atmosphere Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 242,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 244,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 257,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 273,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 278,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 294,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.6666666666666666,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.5,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.3333333333333333,
+     "Mean": 0.5,
+     "Thr@0.3": 1,
+     "Thr@0.5": 1,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 305,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 375,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 426,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 488,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 493,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 495,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 502,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.6666666666666666,
+    "visual_iou": 1.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.8333333333333333,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.6666666666666666,
+     "Mean": 0.8333333333333333,
+     "Thr@0.3": 1,
+     "Thr@0.5": 1,
+     "Thr@0.7": 1
+    }
+   },
+   {
+    "qa_id": 517,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 525,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 546,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 556,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 583,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 621,
+    "level": 2,
+    "capability": "Conditional Counting",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 652,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.5,
+    "visual_iou": 0.4,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.45,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.4,
+     "Mean": 0.45,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 702,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.36363636363636365,
+    "visual_iou": 0.36363636363636365,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.36363636363636365,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.36363636363636365,
+     "Mean": 0.36363636363636365,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 717,
+    "level": 2,
+    "capability": "Conditional Counting",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 729,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.42857142857142855,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.38095238095238093,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 745,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.3333333333333333,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.3333333333333333,
+     "Mean": 0.3333333333333333,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 775,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 786,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 810,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.2777777777777778,
+    "visual_iou": 0.2777777777777778,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.2777777777777778,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 855,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 882,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 889,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 923,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 965,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 980,
+    "level": 2,
+    "capability": "Spatial Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 983,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 1000,
+    "level": 2,
+    "capability": "Temporal Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 1006,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   }
+  ],
+  "by_capability": {
+   "Temporal Alignment": {
+    "count": 11,
+    "Acc.": 36.36363636363637,
+    "C.G.": 18.181818181818183,
+    "B.G.": 9.696969696969697,
+    "Mean": 11.666666666666664,
+    "Thr@0.3": 18.181818181818183,
+    "Thr@0.5": 9.090909090909092,
+    "Thr@0.7": 9.090909090909092
+   },
+   "Intent Understanding": {
+    "count": 7,
+    "Acc.": 42.857142857142854,
+    "C.G.": 14.285714285714286,
+    "B.G.": 4.761904761904761,
+    "Mean": 4.761904761904761,
+    "Thr@0.3": 14.285714285714286,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 5,
+    "Acc.": 60.0,
+    "C.G.": 30.0,
+    "B.G.": 7.272727272727273,
+    "Mean": 10.606060606060606,
+    "Thr@0.3": 20.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Emotional Intelligence": {
+    "count": 4,
+    "Acc.": 25.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Multi-hop Reasoning": {
+    "count": 4,
+    "Acc.": 50.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Multi-Evidence Chain": {
+    "count": 4,
+    "Acc.": 25.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Understanding": {
+    "count": 2,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Event Binding": {
+    "count": 5,
+    "Acc.": 20.0,
+    "C.G.": 20.0,
+    "B.G.": 6.666666666666666,
+    "Mean": 10.0,
+    "Thr@0.3": 20.0,
+    "Thr@0.5": 20.0,
+    "Thr@0.7": 0.0
+   },
+   "Atmosphere Understanding": {
+    "count": 1,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Causal Reasoning": {
+    "count": 4,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Conditional Counting": {
+    "count": 2,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Spatial Understanding": {
+    "count": 1,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  }
+ },
+ "diag_no_brackets": {
+  "summary": {
+   "Level 1": {
+    "n": 21,
+    "Acc.": 38.095238095238095,
+    "C.G.": 21.428571428571427,
+    "B.G.": 8.3982683982684,
+    "Mean": 11.017316017316016,
+    "Thr@0.3": 19.047619047619047,
+    "Thr@0.5": 9.523809523809524,
+    "Thr@0.7": 4.761904761904762,
+    "Acc. 95% CI": [
+     20.75101126400911,
+     59.12134637854193
+    ]
+   },
+   "Level 2": {
+    "n": 21,
+    "Acc.": 19.047619047619047,
+    "C.G.": 9.523809523809524,
+    "B.G.": 3.4920634920634925,
+    "Mean": 3.6219336219336213,
+    "Thr@0.3": 9.523809523809524,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     7.667564999345375,
+     40.000564871287324
+    ]
+   },
+   "Level 3": {
+    "n": 8,
+    "Acc.": 37.5,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     13.684428473912286,
+     69.4257607346229
+    ]
+   },
+   "Overall": {
+    "n": 50,
+    "Acc.": 30.0,
+    "C.G.": 13.0,
+    "B.G.": 4.993939393939394,
+    "Mean": 6.148484848484848,
+    "Thr@0.3": 12.0,
+    "Thr@0.5": 4.0,
+    "Thr@0.7": 2.0,
+    "Acc. 95% CI": [
+     19.10355343030571,
+     43.75035057683886
+    ]
+   }
+  },
+  "diagnostics": {
+   "ok": 50,
+   "infer_error_or_missing": 0,
+   "parse_fail": 0,
+   "notes": {
+    "134": "dropped 2 unreadable interval(s)"
+   }
+  },
+  "pred_letter_distribution": {
+   "Overall": {
+    "A": 5,
+    "B": 5,
+    "C": 7,
+    "D": 2,
+    "E": 9,
+    "F": 6,
+    "G": 9,
+    "H": 7
+   },
+   "Level 1": {
+    "A": 2,
+    "B": 3,
+    "C": 2,
+    "E": 5,
+    "F": 2,
+    "G": 5,
+    "H": 2
+   },
+   "Level 2": {
+    "A": 1,
+    "B": 2,
+    "C": 4,
+    "D": 1,
+    "E": 4,
+    "F": 3,
+    "G": 2,
+    "H": 4
+   },
+   "Level 3": {
+    "A": 2,
+    "C": 1,
+    "D": 1,
+    "F": 1,
+    "G": 2,
+    "H": 1
+   }
+  },
+  "invalid_predictions": [],
+  "per_question": [
+   {
+    "qa_id": 34,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.25,
+    "visual_iou": 0.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.125,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 59,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 72,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 76,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.16666666666666666,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.5,
+     "B.G.": 0.0,
+     "Mean": 0.16666666666666666,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 81,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 83,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.2,
+    "visual_iou": 0.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.1,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 105,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 106,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 117,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.45454545454545453,
+    "visual_iou": 0.4,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.42727272727272725,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.4,
+     "Mean": 0.42727272727272725,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 134,
+    "level": 2,
+    "capability": "Temporal Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 146,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.25,
+    "visual_iou": 0.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.125,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 180,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 187,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.058823529411764705,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.25,
+    "mean_iou": 0.029411764705882353,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 241,
+    "level": 2,
+    "capability": "Atmosphere Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 242,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 244,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 257,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 273,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 278,
+    "level": 3,
+    "capability": "Multi-Evidence Chain",
+    "audio_iou": 0.10869565217391304,
+    "visual_iou": 0.12195121951219512,
+    "audio_coverage": 0.5,
+    "visual_coverage": 0.5,
+    "mean_iou": 0.11532343584305407,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 294,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.6666666666666666,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.5,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.3333333333333333,
+     "Mean": 0.5,
+     "Thr@0.3": 1,
+     "Thr@0.5": 1,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 305,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 375,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 426,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.1111111111111111,
+    "visual_iou": 0.1111111111111111,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.1111111111111111,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 488,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 493,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.6363636363636364,
+    "visual_iou": 0.3,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.46818181818181814,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 495,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 502,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.6666666666666666,
+    "visual_iou": 1.0,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.8333333333333333,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.6666666666666666,
+     "Mean": 0.8333333333333333,
+     "Thr@0.3": 1,
+     "Thr@0.5": 1,
+     "Thr@0.7": 1
+    }
+   },
+   {
+    "qa_id": 517,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 525,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 546,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 556,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 583,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 621,
+    "level": 2,
+    "capability": "Conditional Counting",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 652,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.5,
+    "visual_iou": 0.4,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.45,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.4,
+     "Mean": 0.45,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 702,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.36363636363636365,
+    "visual_iou": 0.36363636363636365,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.36363636363636365,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.36363636363636365,
+     "Mean": 0.36363636363636365,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 717,
+    "level": 2,
+    "capability": "Conditional Counting",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 729,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.42857142857142855,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.38095238095238093,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 745,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.3333333333333333,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.3333333333333333,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.3333333333333333,
+     "Mean": 0.3333333333333333,
+     "Thr@0.3": 1,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 775,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 786,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 810,
+    "level": 2,
+    "capability": "Intent Understanding",
+    "audio_iou": 0.2777777777777778,
+    "visual_iou": 0.2777777777777778,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.2777777777777778,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 855,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 882,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 889,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 923,
+    "level": 2,
+    "capability": "Causal Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 965,
+    "level": 2,
+    "capability": "Emotional Intelligence",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 980,
+    "level": 2,
+    "capability": "Spatial Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 983,
+    "level": 3,
+    "capability": "Multi-hop Reasoning",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 1000,
+    "level": 2,
+    "capability": "Temporal Understanding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 1006,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   }
+  ],
+  "by_capability": {
+   "Temporal Alignment": {
+    "count": 11,
+    "Acc.": 36.36363636363637,
+    "C.G.": 18.181818181818183,
+    "B.G.": 9.696969696969697,
+    "Mean": 11.666666666666664,
+    "Thr@0.3": 18.181818181818183,
+    "Thr@0.5": 9.090909090909092,
+    "Thr@0.7": 9.090909090909092
+   },
+   "Intent Understanding": {
+    "count": 7,
+    "Acc.": 42.857142857142854,
+    "C.G.": 28.571428571428573,
+    "B.G.": 10.476190476190478,
+    "Mean": 10.865800865800864,
+    "Thr@0.3": 28.571428571428573,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 5,
+    "Acc.": 60.0,
+    "C.G.": 30.0,
+    "B.G.": 7.272727272727273,
+    "Mean": 10.606060606060606,
+    "Thr@0.3": 20.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Emotional Intelligence": {
+    "count": 4,
+    "Acc.": 25.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Multi-hop Reasoning": {
+    "count": 4,
+    "Acc.": 50.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Multi-Evidence Chain": {
+    "count": 4,
+    "Acc.": 25.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Understanding": {
+    "count": 2,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Event Binding": {
+    "count": 5,
+    "Acc.": 20.0,
+    "C.G.": 20.0,
+    "B.G.": 6.666666666666666,
+    "Mean": 10.0,
+    "Thr@0.3": 20.0,
+    "Thr@0.5": 20.0,
+    "Thr@0.7": 0.0
+   },
+   "Atmosphere Understanding": {
+    "count": 1,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Causal Reasoning": {
+    "count": 4,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Conditional Counting": {
+    "count": 2,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Spatial Understanding": {
+    "count": 1,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  }
+ },
+ "answer_sources": {
+  "json_letter": {
+   "n": 47,
+   "correct": 14,
+   "acc_within_group": 29.78723404255319,
+   "letters": {
+    "A": 5,
+    "B": 5,
+    "C": 6,
+    "D": 2,
+    "E": 9,
+    "F": 6,
+    "G": 7,
+    "H": 7
+   },
+   "qa_ids": null
+  },
+  "truncated_json": {
+   "n": 3,
+   "correct": 1,
+   "acc_within_group": 33.333333333333336,
+   "letters": {
+    "C": 1,
+    "G": 2
+   },
+   "qa_ids": null
+  }
+ },
+ "format_errors": {
+  "n_questions": 50,
+  "questions_with": {
+   "fully_well_formed": 33,
+   "has_missing_brackets": 14,
+   "generation_cut_length": 3,
+   "json_truncated": 3,
+   "has_zero_length": 1
+  },
+  "timestamps": {
+   "strict_ok": 67,
+   "missing_brackets": 42,
+   "zero_length": 2
+  },
+  "example_qa_ids": {
+   "missing_brackets": [
+    34,
+    72,
+    83,
+    117,
+    134,
+    187,
+    278,
+    305,
+    426,
+    493
+   ],
+   "has_missing_brackets": [
+    34,
+    72,
+    83,
+    117,
+    134,
+    187,
+    278,
+    305,
+    426,
+    493
+   ],
+   "strict_ok": [
+    59,
+    76,
+    81,
+    105,
+    106,
+    146,
+    180,
+    241,
+    242,
+    244
+   ],
+   "fully_well_formed": [
+    59,
+    76,
+    81,
+    105,
+    106,
+    146,
+    180,
+    241,
+    242,
+    244
+   ],
+   "zero_length": [
+    134
+   ],
+   "has_zero_length": [
+    134
+   ],
+   "generation_cut_length": [
+    273,
+    517,
+    983
+   ],
+   "json_truncated": [
+    273,
+    517,
+    983
+   ]
+  }
+ },
+ "stop_causes": {
+  "natural_stop": 47,
+  "length": 3
+ },
+ "gt_letter_distribution": {
+  "Overall": {
+   "A": 13,
+   "B": 9,
+   "C": 6,
+   "D": 4,
+   "E": 8,
+   "F": 3,
+   "G": 2,
+   "H": 5
+  },
+  "Level 1": {
+   "A": 4,
+   "B": 2,
+   "C": 4,
+   "D": 1,
+   "E": 5,
+   "F": 1,
+   "H": 4
+  },
+  "Level 2": {
+   "A": 6,
+   "B": 7,
+   "C": 1,
+   "D": 2,
+   "E": 3,
+   "F": 1,
+   "G": 1
+  },
+  "Level 3": {
+   "A": 3,
+   "C": 1,
+   "D": 1,
+   "F": 1,
+   "G": 1,
+   "H": 1
+  }
+ },
+ "baselines": {
+  "always_A": {
+   "Level 1": {
+    "n": 21,
+    "Acc.": 19.047619047619047,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     7.667564999345375,
+     40.000564871287324
+    ]
+   },
+   "Level 2": {
+    "n": 21,
+    "Acc.": 28.571428571428573,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     13.81386287176154,
+     49.95638088483033
+    ]
+   },
+   "Level 3": {
+    "n": 8,
+    "Acc.": 37.5,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     13.684428473912286,
+     69.4257607346229
+    ]
+   },
+   "Overall": {
+    "n": 50,
+    "Acc.": 26.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     15.871527430089563,
+     39.55315737848392
+    ]
+   }
+  },
+  "chance": {
+   "Level 1": {
+    "n": 21,
+    "Acc.": 12.5
+   },
+   "Level 2": {
+    "n": 21,
+    "Acc.": 12.5
+   },
+   "Level 3": {
+    "n": 8,
+    "Acc.": 12.5
+   },
+   "Overall": {
+    "n": 50,
+    "Acc.": 12.5
+   }
+  }
+ },
+ "input_stats": {
+  "n_rows": 50,
+  "n_ok": 50,
+  "errors_by_type": {},
+  "prompt_tokens_min_max": [
+   4954,
+   56661
+  ],
+  "video_tokens_min_max": [
+   3915,
+   47250
+  ],
+  "audio_tokens_min_max": [
+   768,
+   9112
+  ],
+  "frames_min_max": [
+   58,
+   700
+  ],
+  "video_seconds_min_max": [
+   59.01,
+   701.0
+  ],
+  "audio_seconds_min_max": [
+   59.01,
+   700.93
+  ],
+  "context_fraction_max": 0.865,
+  "n_truncated": 0
+ }
+}

@@ -1,0 +1,57 @@
+EvaOmni evaluation: qwen3omni_av-maskev-noise_greedy_r2
+Audio masking run 2 of 2: audio evidence replaced by noise, all 1027 questions; greedy, max_tokens 2048, pad 1 s, fade 10 ms; otherwise as qwen3omni_av_greedy_maxtok-2048
+
+Model    : Qwen/Qwen3-Omni-30B-A3B-Instruct
+Subset   : full (n=1027)   decoding: greedy   input: av   seed: 1234
+Scored   : 2026-11-18T17:43:52+01:00
+Paper    : Table 2, Qwen3-Omni-Instruct-30B-A3B (all 1027 questions)
+Values in %. Failed or missing answers count 0. In brackets: ours - paper.
+
+                      Acc.          C.G.          B.G.      n   Acc. 95% CI
+PAPER
+  Level 1             28.6           5.1           0.6
+  Level 2             22.4           3.4           0.4
+  Level 3             22.2           2.4           0.1
+  Overall             25.2           4.0           0.4
+
+STRICT   (parsed 648, unparsable 375, failed/missing 4)
+  Level 1      22.9 (-5.7)    6.2 (+1.1)    1.7 (+1.1)    436   [19.2, 27.1]
+  Level 2      15.3 (-7.1)    3.5 (+0.1)    0.7 (+0.3)    438   [12.2, 19.0]
+  Level 3      4.6 (-17.6)    0.1 (-2.3)    0.0 (-0.1)    153   [2.2, 9.1]
+  Overall      16.9 (-8.3)    4.2 (+0.2)    1.0 (+0.6)   1027   [14.8, 19.4]
+
+PERMISSIVE   (parsed 1023, unparsable 0, failed/missing 4)
+  Level 1      30.3 (+1.7)    6.2 (+1.1)    1.7 (+1.1)    436   [26.1, 34.7]
+  Level 2      20.8 (-1.6)    3.5 (+0.1)    0.7 (+0.3)    438   [17.2, 24.8]
+  Level 3      19.0 (-3.2)    0.1 (-2.3)    0.0 (-0.1)    153   [13.5, 25.9]
+  Overall      24.5 (-0.7)    4.2 (+0.2)    1.0 (+0.6)   1027   [22.0, 27.3]
+
+PERMISSIVE, NO FREE TEXT   (parsed 1023, unparsable 0, failed/missing 4)
+  Level 1      30.3 (+1.7)    6.2 (+1.1)    1.7 (+1.1)    436   [26.1, 34.7]
+  Level 2      20.8 (-1.6)    3.5 (+0.1)    0.7 (+0.3)    438   [17.2, 24.8]
+  Level 3      19.0 (-3.2)    0.1 (-2.3)    0.0 (-0.1)    153   [13.5, 25.9]
+  Overall      24.5 (-0.7)    4.2 (+0.2)    1.0 (+0.6)   1027   [22.0, 27.3]
+
+DIAGNOSTIC ONLY: permissive + timestamps without [] accepted   (parsed 1023, unparsable 0, failed/missing 4)
+  Level 1      30.3 (+1.7)    6.8 (+1.7)    1.8 (+1.2)    436   [26.1, 34.7]
+  Level 2      20.8 (-1.6)    4.1 (+0.7)    0.8 (+0.4)    438   [17.2, 24.8]
+  Level 3      19.0 (-3.2)    1.0 (-1.4)    0.0 (-0.1)    153   [13.5, 25.9]
+  Overall      24.5 (-0.7)    4.8 (+0.8)    1.1 (+0.7)   1027   [22.0, 27.3]
+
+BASELINES (Acc.)
+  Level 1     always 'A'  11.7   chance  12.5
+  Level 2     always 'A'  27.4   chance  12.5
+  Level 3     always 'A'  17.0   chance  12.5
+  Overall     always 'A'  19.2   chance  12.5
+
+DIAGNOSTICS
+  answer sources (permissive): {"json_letter": {"n": 921, "correct": 228}, "no_output": {"n": 4, "correct": 0}, "truncated_json": {"n": 102, "correct": 24}}
+  stop causes: {"natural_stop": 921, "max_tokens_reached": 102, "no_output": 4}
+  format, questions with: {"fully_well_formed": 643, "has_missing_brackets": 270, "generation_cut_max_tokens_reached": 102, "json_truncated": 102, "has_zero_length": 11, "empty_visual_evidence_list": 6, "empty_audio_evidence_list": 5, "no_output_or_infer_error": 4, "has_single_point": 2, "has_beyond_video_end": 1}
+  format, timestamps: {"strict_ok": 1463, "missing_brackets": 698, "zero_length": 24, "single_point": 12, "beyond_video_end": 2}
+  letters, overall counts:
+    gt                       {"A": 197, "B": 136, "C": 113, "D": 118, "E": 138, "F": 104, "G": 118, "H": 103}
+    strict                   {"A": 70, "B": 54, "C": 82, "D": 85, "E": 103, "F": 71, "G": 94, "H": 89, "none": 379}
+    permissive               {"A": 108, "B": 77, "C": 134, "D": 128, "E": 149, "F": 127, "G": 156, "H": 144, "none": 4}
+    permissive_no_free_text  {"A": 108, "B": 77, "C": 134, "D": 128, "E": 149, "F": 127, "G": 156, "H": 144, "none": 4}
+    diag_no_brackets         {"A": 108, "B": 77, "C": 134, "D": 128, "E": 149, "F": 127, "G": 156, "H": 144, "none": 4}

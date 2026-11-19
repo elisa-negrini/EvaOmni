@@ -1,0 +1,1344 @@
+{
+ "qa_id": 1,
+ "video_id": "179",
+ "level": 2,
+ "capability": "Conditional Counting",
+ "time": "2026-11-19T10:34:03+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 293.19,
+  "frames": 292,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9965870307167235,
+  "audio_seconds": 293.19,
+  "audio_peak": 1.2114388942718506,
+  "preprocess_s": 2.92,
+  "prompt_tokens": 23767,
+  "video_tokens": 19710,
+  "audio_tokens": 3812,
+  "text_and_special_tokens": 245,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.363
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 236,
+  "raw_response": "```json\n{\n  \"answer\": \"D\",\n  \"visual_evidence\": [\n    {\"time\": \"02:00,02:01\"},\n    {\"time\": \"02:01,02:02\"},\n    {\"time\": \"02:02,02:03\"},\n    {\"time\": \"02:03,02:04\"},\n    {\"time\": \"02:04,02:05\"},\n    {\"time\": \"02:05,02:06\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"02:00,02:01\"},\n    {\"time\": \"02:01,02:02\"},\n    {\"time\": \"02:02,02:03\"},\n    {\"time\": \"02:03,02:04\"},\n    {\"time\": \"02:04,02:05\"},\n    {\"time\": \"02:05,02:06\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 102,
+ "video_id": "179",
+ "level": 2,
+ "capability": "Conditional Counting",
+ "time": "2026-11-19T10:34:03+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 293.19,
+  "frames": 292,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9965870307167235,
+  "audio_seconds": 293.19,
+  "audio_peak": 1.2114388942718506,
+  "preprocess_s": 2.92,
+  "prompt_tokens": 23756,
+  "video_tokens": 19710,
+  "audio_tokens": 3812,
+  "text_and_special_tokens": 234,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.362
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 130,
+  "raw_response": "{\n  \"answer\": \"C\",\n  \"visual_evidence\": [\n    {\"time\": \"00:57,00:58\"},\n    {\"time\": \"01:00,01:01\"},\n    {\"time\": \"01:08,01:09\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"00:57,00:58\"},\n    {\"time\": \"01:00,01:01\"},\n    {\"time\": \"01:08,01:09\"}\n  ]\n}"
+ }
+}
+{
+ "qa_id": 601,
+ "video_id": "179",
+ "level": 2,
+ "capability": "Conditional Counting",
+ "time": "2026-11-19T10:34:03+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 293.19,
+  "frames": 292,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9965870307167235,
+  "audio_seconds": 293.19,
+  "audio_peak": 1.2114388942718506,
+  "preprocess_s": 2.92,
+  "prompt_tokens": 23784,
+  "video_tokens": 19710,
+  "audio_tokens": 3812,
+  "text_and_special_tokens": 262,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.363
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 62,
+  "raw_response": "{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"01:48,01:48\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"02:07,02:08\"}\n  ]\n}"
+ }
+}
+{
+ "qa_id": 621,
+ "video_id": "179",
+ "level": 2,
+ "capability": "Conditional Counting",
+ "time": "2026-11-19T10:34:03+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 293.19,
+  "frames": 292,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9965870307167235,
+  "audio_seconds": 293.19,
+  "audio_peak": 1.2114388942718506,
+  "preprocess_s": 2.92,
+  "prompt_tokens": 23860,
+  "video_tokens": 19710,
+  "audio_tokens": 3812,
+  "text_and_special_tokens": 338,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.364
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 62,
+  "raw_response": "{\n  \"answer\": \"A\",\n  \"visual_evidence\": [\n    {\"time\": \"02:55,02:56\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"02:55,02:56\"}\n  ]\n}"
+ }
+}
+{
+ "qa_id": 317,
+ "video_id": "184",
+ "level": 2,
+ "capability": "Semantic Disambiguation",
+ "time": "2026-11-19T10:34:11+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 268.0,
+  "frames": 268,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 268.0,
+  "audio_peak": 0.9501156210899353,
+  "preprocess_s": 2.94,
+  "prompt_tokens": 21839,
+  "video_tokens": 18090,
+  "audio_tokens": 3485,
+  "text_and_special_tokens": 264,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.333
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"A\",\n  \"visual_evidence\": [\n    {\"time\": \"01:27,01:30\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"01:27,01:30\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 821,
+ "video_id": "184",
+ "level": 2,
+ "capability": "Semantic Disambiguation",
+ "time": "2026-11-19T10:34:11+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 268.0,
+  "frames": 268,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 268.0,
+  "audio_peak": 0.9501156210899353,
+  "preprocess_s": 2.94,
+  "prompt_tokens": 21886,
+  "video_tokens": 18090,
+  "audio_tokens": 3485,
+  "text_and_special_tokens": 311,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.334
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"F\",\n  \"visual_evidence\": [\n    {\"time\": \"02:41,02:42\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"02:41,02:42\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 843,
+ "video_id": "184",
+ "level": 2,
+ "capability": "Semantic Disambiguation",
+ "time": "2026-11-19T10:34:11+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 268.0,
+  "frames": 268,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 268.0,
+  "audio_peak": 0.9501156210899353,
+  "preprocess_s": 2.94,
+  "prompt_tokens": 21933,
+  "video_tokens": 18090,
+  "audio_tokens": 3485,
+  "text_and_special_tokens": 358,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.335
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"H\",\n  \"visual_evidence\": [\n    {\"time\": \"02:55,02:57\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"02:55,02:57\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 916,
+ "video_id": "184",
+ "level": 2,
+ "capability": "Semantic Disambiguation",
+ "time": "2026-11-19T10:34:11+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 268.0,
+  "frames": 268,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 268.0,
+  "audio_peak": 0.9501156210899353,
+  "preprocess_s": 2.94,
+  "prompt_tokens": 21864,
+  "video_tokens": 18090,
+  "audio_tokens": 3485,
+  "text_and_special_tokens": 289,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.334
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"C\",\n  \"visual_evidence\": [\n    {\"time\": \"01:27,01:30\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"01:27,01:30\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 433,
+ "video_id": "191",
+ "level": 2,
+ "capability": "Spatial Understanding",
+ "time": "2026-11-19T10:34:20+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 237.47,
+  "frames": 236,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9957805907172996,
+  "audio_seconds": 237.47,
+  "audio_peak": 0.6335541009902954,
+  "preprocess_s": 2.55,
+  "prompt_tokens": 19293,
+  "video_tokens": 15930,
+  "audio_tokens": 3087,
+  "text_and_special_tokens": 276,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.294
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"H\",\n  \"visual_evidence\": [\n    {\"time\": \"[03:24,03:25]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[03:24,03:25]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 461,
+ "video_id": "191",
+ "level": 2,
+ "capability": "Spatial Understanding",
+ "time": "2026-11-19T10:34:20+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 237.47,
+  "frames": 236,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9957805907172996,
+  "audio_seconds": 237.47,
+  "audio_peak": 0.6335541009902954,
+  "preprocess_s": 2.55,
+  "prompt_tokens": 19265,
+  "video_tokens": 15930,
+  "audio_tokens": 3087,
+  "text_and_special_tokens": 248,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.294
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"D\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:00,00:01]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:00,00:03]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 627,
+ "video_id": "191",
+ "level": 2,
+ "capability": "Spatial Understanding",
+ "time": "2026-11-19T10:34:20+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 237.47,
+  "frames": 236,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9957805907172996,
+  "audio_seconds": 237.47,
+  "audio_peak": 0.6335541009902954,
+  "preprocess_s": 2.55,
+  "prompt_tokens": 19284,
+  "video_tokens": 15930,
+  "audio_tokens": 3087,
+  "text_and_special_tokens": 267,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.294
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"A\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:00,00:01]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:00,00:03]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 726,
+ "video_id": "191",
+ "level": 2,
+ "capability": "Spatial Understanding",
+ "time": "2026-11-19T10:34:20+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 237.47,
+  "frames": 236,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9957805907172996,
+  "audio_seconds": 237.47,
+  "audio_peak": 0.6335541009902954,
+  "preprocess_s": 2.55,
+  "prompt_tokens": 19296,
+  "video_tokens": 15930,
+  "audio_tokens": 3087,
+  "text_and_special_tokens": 279,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.294
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"visual_evidence\": [\n    {\"time\": \"[02:15,02:17]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[02:15,02:17]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 352,
+ "video_id": "196",
+ "level": 2,
+ "capability": "Conditional Counting",
+ "time": "2026-11-19T10:34:29+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 273.32,
+  "frames": 272,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9963369963369964,
+  "audio_seconds": 273.32,
+  "audio_peak": 1.1770163774490356,
+  "preprocess_s": 1.52,
+  "prompt_tokens": 22244,
+  "video_tokens": 18360,
+  "audio_tokens": 3554,
+  "text_and_special_tokens": 330,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.339
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"F\",\n  \"visual_evidence\": [\n    {\"time\": \"02:25,02:26\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"02:25,02:26\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 554,
+ "video_id": "196",
+ "level": 2,
+ "capability": "Conditional Counting",
+ "time": "2026-11-19T10:34:29+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 273.32,
+  "frames": 272,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9963369963369964,
+  "audio_seconds": 273.32,
+  "audio_peak": 1.1770163774490356,
+  "preprocess_s": 1.52,
+  "prompt_tokens": 22196,
+  "video_tokens": 18360,
+  "audio_tokens": 3554,
+  "text_and_special_tokens": 282,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.339
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 74,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"visual_evidence\": [\n    {\n      \"time\": \"[02:27,02:28]\"\n    }\n  ],\n  \"audio_evidence\": [\n    {\n      \"time\": \"[02:26,02:27]\"\n    }\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 577,
+ "video_id": "196",
+ "level": 2,
+ "capability": "Conditional Counting",
+ "time": "2026-11-19T10:34:29+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 273.32,
+  "frames": 272,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9963369963369964,
+  "audio_seconds": 273.32,
+  "audio_peak": 1.1770163774490356,
+  "preprocess_s": 1.52,
+  "prompt_tokens": 22148,
+  "video_tokens": 18360,
+  "audio_tokens": 3554,
+  "text_and_special_tokens": 234,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.338
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"C\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:24,01:25]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[01:20,01:22]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 717,
+ "video_id": "196",
+ "level": 2,
+ "capability": "Conditional Counting",
+ "time": "2026-11-19T10:34:29+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 273.32,
+  "frames": 272,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9963369963369964,
+  "audio_seconds": 273.32,
+  "audio_peak": 1.1770163774490356,
+  "preprocess_s": 1.52,
+  "prompt_tokens": 22162,
+  "video_tokens": 18360,
+  "audio_tokens": 3554,
+  "text_and_special_tokens": 248,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.338
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"C\",\n  \"visual_evidence\": [\n    {\"time\": \"[02:18,02:20]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[02:18,02:20]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 164,
+ "video_id": "200",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:34:37+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 256.31,
+  "frames": 256,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 256.31,
+  "audio_peak": 0.31807941198349,
+  "preprocess_s": 1.33,
+  "prompt_tokens": 20885,
+  "video_tokens": 17280,
+  "audio_tokens": 3332,
+  "text_and_special_tokens": 273,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.319
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"A\",\n  \"visual_evidence\": [\n    {\"time\": \"[02:17,02:20]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[02:15,02:16]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 368,
+ "video_id": "200",
+ "level": 2,
+ "capability": "Causal Reasoning",
+ "time": "2026-11-19T10:34:37+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 256.31,
+  "frames": 256,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 256.31,
+  "audio_peak": 0.31807941198349,
+  "preprocess_s": 1.33,
+  "prompt_tokens": 20871,
+  "video_tokens": 17280,
+  "audio_tokens": 3332,
+  "text_and_special_tokens": 259,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.318
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"A\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:42,00:45]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:42,00:45]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 521,
+ "video_id": "200",
+ "level": 2,
+ "capability": "Causal Reasoning",
+ "time": "2026-11-19T10:34:37+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 256.31,
+  "frames": 256,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 256.31,
+  "audio_peak": 0.31807941198349,
+  "preprocess_s": 1.33,
+  "prompt_tokens": 20840,
+  "video_tokens": 17280,
+  "audio_tokens": 3332,
+  "text_and_special_tokens": 228,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.318
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"D\",\n  \"visual_evidence\": [\n    {\"time\": \"00:00,00:01\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"00:04,00:05\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 932,
+ "video_id": "200",
+ "level": 2,
+ "capability": "Causal Reasoning",
+ "time": "2026-11-19T10:34:37+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 256.31,
+  "frames": 256,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 256.31,
+  "audio_peak": 0.31807941198349,
+  "preprocess_s": 1.33,
+  "prompt_tokens": 20847,
+  "video_tokens": 17280,
+  "audio_tokens": 3332,
+  "text_and_special_tokens": 235,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.318
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"D\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:00,00:01]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:16,00:19]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 64,
+ "video_id": "201",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:00+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 246.0,
+  "frames": 246,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 245.69,
+  "audio_peak": 0.33338332176208496,
+  "preprocess_s": 1.05,
+  "prompt_tokens": 20094,
+  "video_tokens": 16605,
+  "audio_tokens": 3194,
+  "text_and_special_tokens": 295,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.307
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:50,01:53]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[01:49,01:53]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 82,
+ "video_id": "201",
+ "level": 2,
+ "capability": "Emotional Intelligence",
+ "time": "2026-11-19T10:35:00+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 246.0,
+  "frames": 246,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 245.69,
+  "audio_peak": 0.33338332176208496,
+  "preprocess_s": 1.05,
+  "prompt_tokens": 20093,
+  "video_tokens": 16605,
+  "audio_tokens": 3194,
+  "text_and_special_tokens": 294,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.307
+ },
+ "output": {
+  "stop_cause": "max_tokens_reached",
+  "n_output_tokens": 2048,
+  "raw_response": "{\n  \"answer\": \"A\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:00,00:05]\"},\n    {\"time\": \"[00:07,00:10]\"},\n    {\"time\": \"[00:11,00:14]\"},\n    {\"time\": \"[00:15,00:18]\"},\n    {\"time\": \"[00:19,00:22]\"},\n    {\"time\": \"[00:23,00:26]\"},\n    {\"time\": \"[00:27,00:30]\"},\n    {\"time\": \"[00:31,00:34]\"},\n    {\"time\": \"[00:35,00:38]\"},\n    {\"time\": \"[00:39,00:42]\"},\n    {\"time\": \"[00:43,00:46]\"},\n    {\"time\": \"[00:47,00:50]\"},\n    {\"time\": \"[00:51,00:54]\"},\n    {\"time\": \"[00:55,00:58]\"},\n    {\"time\": \"[00:59,01:02]\"},\n    {\"time\": \"[01:03,01:06]\"},\n    {\"time\": \"[01:07,01:10]\"},\n    {\"time\": \"[01:11,01:14]\"},\n    {\"time\": \"[01:15,01:18]\"},\n    {\"time\": \"[01:19,01:22]\"},\n    {\"time\": \"[01:23,01:26]\"},\n    {\"time\": \"[01:27,01:30]\"},\n    {\"time\": \"[01:31,01:34]\"},\n    {\"time\": \"[01:35,01:38]\"},\n    {\"time\": \"[01:39,01:42]\"},\n    {\"time\": \"[01:43,01:46]\"},\n    {\"time\": \"[01:47,01:50]\"},\n    {\"time\": \"[01:51,01:54]\"},\n    {\"time\": \"[01:55,01:58]\"},\n    {\"time\": \"[01:59,02:02]\"},\n    {\"time\": \"[02:03,02:06]\"},\n    {\"time\": \"[02:07,02:10]\"},\n    {\"time\": \"[02:11,02:14]\"},\n    {\"time\": \"[02:15,02:18]\"},\n    {\"time\": \"[02:19,02:22]\"},\n    {\"time\": \"[02:23,02:26]\"},\n    {\"time\": \"[02:27,02:30]\"},\n    {\"time\": \"[02:31,02:34]\"},\n    {\"time\": \"[02:35,02:38]\"},\n    {\"time\": \"[02:39,02:42]\"},\n    {\"time\": \"[02:43,02:46]\"},\n    {\"time\": \"[02:47,02:50]\"},\n    {\"time\": \"[02:51,02:54]\"},\n    {\"time\": \"[02:55,02:58]\"},\n    {\"time\": \"[02:59,03:02]\"},\n    {\"time\": \"[03:03,03:06]\"},\n    {\"time\": \"[03:07,03:10]\"},\n    {\"time\": \"[03:11,03:14]\"},\n    {\"time\": \"[03:15,03:18]\"},\n    {\"time\": \"[03:19,03:22]\"},\n    {\"time\": \"[03:23,03:26]\"},\n    {\"time\": \"[03:27,03:30]\"},\n    {\"time\": \"[03:31,03:34]\"},\n    {\"time\": \"[03:35,03:38]\"},\n    {\"time\": \"[03:39,03:42]\"},\n    {\"time\": \"[03:43,03:46]\"},\n    {\"time\": \"[03:47,03:50]\"},\n    {\"time\": \"[03:51,03:54]\"},\n    {\"time\": \"[03:55,03:58]\"},\n    {\"time\": \"[03:59,04:02]\"},\n    {\"time\": \"[04:03,04:06]\"},\n    {\"time\": \"[04:07,04:10]\"},\n    {\"time\": \"[04:11,04:14]\"},\n    {\"time\": \"[04:15,04:18]\"},\n    {\"time\": \"[04:19,04:22]\"},\n    {\"time\": \"[04:23,04:26]\"},\n    {\"time\": \"[04:27,04:30]\"},\n    {\"time\": \"[04:31,04:34]\"},\n    {\"time\": \"[04:35,04:38]\"},\n    {\"time\": \"[04:39,04:42]\"},\n    {\"time\": \"[04:43,04:46]\"},\n    {\"time\": \"[04:47,04:50]\"},\n    {\"time\": \"[04:51,04:54]\"},\n    {\"time\": \"[04:55,04:58]\"},\n    {\"time\": \"[04:59,05:02]\"},\n    {\"time\": \"[05:03,05:06]\"},\n    {\"time\": \"[05:07,05:10]\"},\n    {\"time\": \"[05:11,05:14]\"},\n    {\"time\": \"[05:15,05:18]\"},\n    {\"time\": \"[05:19,05:22]\"},\n    {\"time\": \"[05:23,05:26]\"},\n    {\"time\": \"[05:27,05:30]\"},\n    {\"time\": \"[05:31,05:34]\"},\n    {\"time\": \"[05:35,05:38]\"},\n    {\"time\": \"[05:39,05:42]\"},\n    {\"time\": \"[05:43,05:46]\"},\n    {\"time\": \"[05:47,05:50]\"},\n    {\"time\": \"[05:51,05:54]\"},\n    {\"time\": \"[05:55,05:58]\"},\n    {\"time\": \"[05:59,06:02]\"},\n    {\"time\": \"[06:03,06:06]\"},\n    {\"time\": \"[06:07,06:10]\"},\n    {\"time\": \"[06:11,06:14]\"},\n    {\"time\": \"[06:15,06:18]\"},\n    {\"time\": \"[06:19,06:22]\"},\n    {\"time\": \"[06:23,06:26]\"},\n    {\"time\": \"[06:27,06:30]\"},\n    {\"time\": \"[06:31,06:34]\"},\n    {\"time\": \"[06:35,06:38]\"},\n    {\"time\": \"[06:39,06:42]\"},\n    {\"time\": \"[06:43,06:46]\"},\n    {\"time\": \"[06:47,06:50]\"},\n    {\"time\": \"[06:51,06:54]\"},\n    {\"time\": \"[06:55,06:58]\"},\n    {\"time\": \"[06:59,07:02]\"},\n    {\"time\": \"[07:03,07:06]\"},\n    {\"time\": \"[07:07,07:10]\"},\n    {\"time\": \"[07:11,07:14]\"},\n    {\"time\": \"[07:15,07:18]\"},\n    {\"time\": \"[07:19,07:22]\"},\n    {\"time\": \"[07:23,07:26]\"},\n    {\"time\": \"[07:27,07:30]\"},\n    {\"time\": \"[07:31,07:34]"
+ }
+}
+{
+ "qa_id": 354,
+ "video_id": "201",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:00+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 246.0,
+  "frames": 246,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 245.69,
+  "audio_peak": 0.33338332176208496,
+  "preprocess_s": 1.05,
+  "prompt_tokens": 20092,
+  "video_tokens": 16605,
+  "audio_tokens": 3194,
+  "text_and_special_tokens": 293,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.307
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"D\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:29,00:35]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:26,00:30]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 448,
+ "video_id": "201",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:00+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 246.0,
+  "frames": 246,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 245.69,
+  "audio_peak": 0.33338332176208496,
+  "preprocess_s": 1.05,
+  "prompt_tokens": 20080,
+  "video_tokens": 16605,
+  "audio_tokens": 3194,
+  "text_and_special_tokens": 281,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.306
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"B\",\n  \"visual_evidence\": [\n    {\"time\": \"[02:34,02:36]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[02:33,02:36]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 640,
+ "video_id": "215",
+ "level": 2,
+ "capability": "Emotional Intelligence",
+ "time": "2026-11-19T10:35:05+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 133.0,
+  "frames": 132,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9924812030075187,
+  "audio_seconds": 132.59,
+  "audio_peak": 0.9463984966278076,
+  "preprocess_s": 0.66,
+  "prompt_tokens": 10862,
+  "video_tokens": 8910,
+  "audio_tokens": 1724,
+  "text_and_special_tokens": 228,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.166
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 134,
+  "raw_response": "```json\n{\n  \"answer\": \"D\",\n  \"visual_evidence\": [\n    {\"time\": \"00:00,00:01\"},\n    {\"time\": \"00:02,00:03\"},\n    {\"time\": \"00:04,00:05\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"00:00,00:01\"},\n    {\"time\": \"00:02,00:03\"},\n    {\"time\": \"00:04,00:05\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 641,
+ "video_id": "215",
+ "level": 2,
+ "capability": "Causal Reasoning",
+ "time": "2026-11-19T10:35:05+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 133.0,
+  "frames": 132,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9924812030075187,
+  "audio_seconds": 132.59,
+  "audio_peak": 0.9463984966278076,
+  "preprocess_s": 0.66,
+  "prompt_tokens": 11038,
+  "video_tokens": 8910,
+  "audio_tokens": 1724,
+  "text_and_special_tokens": 404,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.168
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"H\",\n  \"visual_evidence\": [\n    {\"time\": \"00:37,00:40\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"00:37,00:40\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 756,
+ "video_id": "215",
+ "level": 2,
+ "capability": "Causal Reasoning",
+ "time": "2026-11-19T10:35:05+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 133.0,
+  "frames": 132,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9924812030075187,
+  "audio_seconds": 132.59,
+  "audio_peak": 0.9463984966278076,
+  "preprocess_s": 0.66,
+  "prompt_tokens": 10940,
+  "video_tokens": 8910,
+  "audio_tokens": 1724,
+  "text_and_special_tokens": 306,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.167
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"D\",\n  \"visual_evidence\": [\n    {\"time\": \"00:00,00:06\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"00:00,00:06\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 872,
+ "video_id": "215",
+ "level": 2,
+ "capability": "Emotional Intelligence",
+ "time": "2026-11-19T10:35:05+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 133.0,
+  "frames": 132,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9924812030075187,
+  "audio_seconds": 132.59,
+  "audio_peak": 0.9463984966278076,
+  "preprocess_s": 0.66,
+  "prompt_tokens": 10869,
+  "video_tokens": 8910,
+  "audio_tokens": 1724,
+  "text_and_special_tokens": 235,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.166
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"00:41,00:42\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"00:41,00:42\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 582,
+ "video_id": "316",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:10+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 113.17,
+  "frames": 112,
+  "frame_hw_after_qwen_omni_utils": [364, 476],
+  "sample_fps": 0.9911504424778761,
+  "audio_seconds": 113.17,
+  "audio_peak": 0.4780369997024536,
+  "preprocess_s": 0.58,
+  "prompt_tokens": 10930,
+  "video_tokens": 9240,
+  "audio_tokens": 1472,
+  "text_and_special_tokens": 218,
+  "video_tokens_per_temporal_grid": 165.0,
+  "context_fraction": 0.167
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"B\",\n  \"visual_evidence\": [\n    {\"time\": \"01:19,01:20\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"01:19,01:20\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 691,
+ "video_id": "316",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:10+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 113.17,
+  "frames": 112,
+  "frame_hw_after_qwen_omni_utils": [364, 476],
+  "sample_fps": 0.9911504424778761,
+  "audio_seconds": 113.17,
+  "audio_peak": 0.4780369997024536,
+  "preprocess_s": 0.58,
+  "prompt_tokens": 10947,
+  "video_tokens": 9240,
+  "audio_tokens": 1472,
+  "text_and_special_tokens": 235,
+  "video_tokens_per_temporal_grid": 165.0,
+  "context_fraction": 0.167
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:17,00:18]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:17,00:18]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 748,
+ "video_id": "316",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:10+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 113.17,
+  "frames": 112,
+  "frame_hw_after_qwen_omni_utils": [364, 476],
+  "sample_fps": 0.9911504424778761,
+  "audio_seconds": 113.17,
+  "audio_peak": 0.4780369997024536,
+  "preprocess_s": 0.58,
+  "prompt_tokens": 10926,
+  "video_tokens": 9240,
+  "audio_tokens": 1472,
+  "text_and_special_tokens": 214,
+  "video_tokens_per_temporal_grid": 165.0,
+  "context_fraction": 0.167
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:09,00:10]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:09,00:10]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 796,
+ "video_id": "316",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:10+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 113.17,
+  "frames": 112,
+  "frame_hw_after_qwen_omni_utils": [364, 476],
+  "sample_fps": 0.9911504424778761,
+  "audio_seconds": 113.17,
+  "audio_peak": 0.4780369997024536,
+  "preprocess_s": 0.58,
+  "prompt_tokens": 10958,
+  "video_tokens": 9240,
+  "audio_tokens": 1472,
+  "text_and_special_tokens": 246,
+  "video_tokens_per_temporal_grid": 165.0,
+  "context_fraction": 0.167
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"01:18,01:20\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"01:18,01:20\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 322,
+ "video_id": "320",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 118.0,
+  "frames": 118,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 117.55,
+  "audio_peak": 0.5072376728057861,
+  "preprocess_s": 0.59,
+  "prompt_tokens": 9723,
+  "video_tokens": 7965,
+  "audio_tokens": 1528,
+  "text_and_special_tokens": 230,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.148
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"F\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:06,00:08]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:15,00:16]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 552,
+ "video_id": "320",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 118.0,
+  "frames": 118,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 117.55,
+  "audio_peak": 0.5072376728057861,
+  "preprocess_s": 0.59,
+  "prompt_tokens": 9758,
+  "video_tokens": 7965,
+  "audio_tokens": 1528,
+  "text_and_special_tokens": 265,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.149
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"D\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:02,00:03]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:48,00:50]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 772,
+ "video_id": "320",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 118.0,
+  "frames": 118,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 117.55,
+  "audio_peak": 0.5072376728057861,
+  "preprocess_s": 0.59,
+  "prompt_tokens": 9723,
+  "video_tokens": 7965,
+  "audio_tokens": 1528,
+  "text_and_special_tokens": 230,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.148
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"visual_evidence\": [\n    {\"time\": \"01:21,01:22\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"01:21,01:22\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 930,
+ "video_id": "320",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-19T10:35:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 118.0,
+  "frames": 118,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 117.55,
+  "audio_peak": 0.5072376728057861,
+  "preprocess_s": 0.59,
+  "prompt_tokens": 9754,
+  "video_tokens": 7965,
+  "audio_tokens": 1528,
+  "text_and_special_tokens": 261,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.149
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"B\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:12,01:14]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[01:12,01:14]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 245,
+ "video_id": "328",
+ "level": 2,
+ "capability": "Emotional Intelligence",
+ "time": "2026-11-19T10:35:26+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 293.29,
+  "frames": 292,
+  "frame_hw_after_qwen_omni_utils": [364, 476],
+  "sample_fps": 0.9965870307167235,
+  "audio_seconds": 293.29,
+  "audio_peak": 0.4727204144001007,
+  "preprocess_s": 1.45,
+  "prompt_tokens": 28123,
+  "video_tokens": 24090,
+  "audio_tokens": 3813,
+  "text_and_special_tokens": 220,
+  "video_tokens_per_temporal_grid": 165.0,
+  "context_fraction": 0.429
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"A\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:00,00:01]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:00,00:01]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 531,
+ "video_id": "328",
+ "level": 2,
+ "capability": "Intent Understanding",
+ "time": "2026-11-19T10:35:26+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 293.29,
+  "frames": 292,
+  "frame_hw_after_qwen_omni_utils": [364, 476],
+  "sample_fps": 0.9965870307167235,
+  "audio_seconds": 293.29,
+  "audio_peak": 0.4727204144001007,
+  "preprocess_s": 1.45,
+  "prompt_tokens": 28216,
+  "video_tokens": 24090,
+  "audio_tokens": 3813,
+  "text_and_special_tokens": 313,
+  "video_tokens_per_temporal_grid": 165.0,
+  "context_fraction": 0.431
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:48,01:50]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[01:48,01:50]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 594,
+ "video_id": "328",
+ "level": 2,
+ "capability": "Emotional Intelligence",
+ "time": "2026-11-19T10:35:26+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 293.29,
+  "frames": 292,
+  "frame_hw_after_qwen_omni_utils": [364, 476],
+  "sample_fps": 0.9965870307167235,
+  "audio_seconds": 293.29,
+  "audio_peak": 0.4727204144001007,
+  "preprocess_s": 1.45,
+  "prompt_tokens": 28123,
+  "video_tokens": 24090,
+  "audio_tokens": 3813,
+  "text_and_special_tokens": 220,
+  "video_tokens_per_temporal_grid": 165.0,
+  "context_fraction": 0.429
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 62,
+  "raw_response": "{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"02:14,02:15\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"02:14,02:15\"}\n  ]\n}"
+ }
+}
+{
+ "qa_id": 677,
+ "video_id": "328",
+ "level": 2,
+ "capability": "Intent Understanding",
+ "time": "2026-11-19T10:35:26+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 293.29,
+  "frames": 292,
+  "frame_hw_after_qwen_omni_utils": [364, 476],
+  "sample_fps": 0.9965870307167235,
+  "audio_seconds": 293.29,
+  "audio_peak": 0.4727204144001007,
+  "preprocess_s": 1.45,
+  "prompt_tokens": 28207,
+  "video_tokens": 24090,
+  "audio_tokens": 3813,
+  "text_and_special_tokens": 304,
+  "video_tokens_per_temporal_grid": 165.0,
+  "context_fraction": 0.43
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"A\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:00,00:09]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:00,00:09]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 14,
+ "video_id": "365",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:32+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 188.43,
+  "frames": 188,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 188.43,
+  "audio_peak": 0.9009070992469788,
+  "preprocess_s": 0.85,
+  "prompt_tokens": 15448,
+  "video_tokens": 12690,
+  "audio_tokens": 2450,
+  "text_and_special_tokens": 308,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.236
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"02:25,02:26\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"02:25,02:26\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 83,
+ "video_id": "365",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:32+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 188.43,
+  "frames": 188,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 188.43,
+  "audio_peak": 0.9009070992469788,
+  "preprocess_s": 0.85,
+  "prompt_tokens": 15482,
+  "video_tokens": 12690,
+  "audio_tokens": 2450,
+  "text_and_special_tokens": 342,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.236
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"F\",\n  \"visual_evidence\": [\n    {\"time\": \"01:51,01:52\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"01:49,01:52\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 566,
+ "video_id": "365",
+ "level": 2,
+ "capability": "Causal Reasoning",
+ "time": "2026-11-19T10:35:32+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 188.43,
+  "frames": 188,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 188.43,
+  "audio_peak": 0.9009070992469788,
+  "preprocess_s": 0.85,
+  "prompt_tokens": 15471,
+  "video_tokens": 12690,
+  "audio_tokens": 2450,
+  "text_and_special_tokens": 331,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.236
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:48,00:50]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:48,00:50]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 731,
+ "video_id": "365",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:32+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 188.43,
+  "frames": 188,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 188.43,
+  "audio_peak": 0.9009070992469788,
+  "preprocess_s": 0.85,
+  "prompt_tokens": 15443,
+  "video_tokens": 12690,
+  "audio_tokens": 2450,
+  "text_and_special_tokens": 303,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.236
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"C\",\n  \"visual_evidence\": [\n    {\"time\": \"02:25,02:27\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"02:25,02:27\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 33,
+ "video_id": "368",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-19T10:35:39+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 204.25,
+  "frames": 204,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 204.25,
+  "audio_peak": 0.9634941816329956,
+  "preprocess_s": 0.92,
+  "prompt_tokens": 16786,
+  "video_tokens": 13770,
+  "audio_tokens": 2656,
+  "text_and_special_tokens": 360,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.256
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"D\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:28,01:30]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[01:28,01:30]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 84,
+ "video_id": "368",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-19T10:35:39+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 204.25,
+  "frames": 204,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 204.25,
+  "audio_peak": 0.9634941816329956,
+  "preprocess_s": 0.92,
+  "prompt_tokens": 16729,
+  "video_tokens": 13770,
+  "audio_tokens": 2656,
+  "text_and_special_tokens": 303,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.255
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:35,00:37]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:22,00:23]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 216,
+ "video_id": "368",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-19T10:35:39+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 204.25,
+  "frames": 204,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 204.25,
+  "audio_peak": 0.9634941816329956,
+  "preprocess_s": 0.92,
+  "prompt_tokens": 16741,
+  "video_tokens": 13770,
+  "audio_tokens": 2656,
+  "text_and_special_tokens": 315,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.255
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"H\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:47,00:50]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:47,00:50]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 348,
+ "video_id": "368",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-19T10:35:39+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 204.25,
+  "frames": 204,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 204.25,
+  "audio_peak": 0.9634941816329956,
+  "preprocess_s": 0.92,
+  "prompt_tokens": 16739,
+  "video_tokens": 13770,
+  "audio_tokens": 2656,
+  "text_and_special_tokens": 313,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.255
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:31,01:33]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[01:31,01:33]\"}\n  ]\n}\n```"
+ }
+}

@@ -1,0 +1,54 @@
+EvaOmni evaluation: qwen3omni_av_greedy_det48_base-a
+Baseline (our run settings), copy a; determinism test, greedy, max_tokens 2048, 48 questions; run twice with identical settings
+
+Model    : Qwen/Qwen3-Omni-30B-A3B-Instruct
+Subset   : det48 (n=48)   decoding: greedy   input: av   seed: 1234
+Scored   : 2026-11-19T10:32:58+01:00
+Paper    : Table 2, Qwen3-Omni-Instruct-30B-A3B (all 1027 questions)
+Values in %. Failed or missing answers count 0. In brackets: ours - paper.
+
+WARNING: 48 questions, not the full benchmark; the paper's numbers are on all 1027 questions.
+
+                      Acc.          C.G.          B.G.      n   Acc. 95% CI
+PAPER
+  Level 1             28.6           5.1           0.6
+  Level 2             22.4           3.4           0.4
+  Level 3             22.2           2.4           0.1
+  Overall             25.2           4.0           0.4
+
+STRICT   (parsed 30, unparsable 18, failed/missing 0)
+  Level 1     15.8 (-12.8)    5.3 (+0.2)    1.1 (+0.5)     19   [5.5, 37.6]
+  Level 2      13.8 (-8.6)    3.4 (+0.0)    0.0 (-0.4)     29   [5.5, 30.6]
+  Overall     14.6 (-10.6)    4.2 (+0.2)    0.4 (+0.0)     48   [7.2, 27.2]
+
+PERMISSIVE   (parsed 48, unparsable 0, failed/missing 0)
+  Level 1      36.8 (+8.2)    5.3 (+0.2)    1.1 (+0.5)     19   [19.1, 59.0]
+  Level 2      27.6 (+5.2)    3.4 (+0.0)    0.0 (-0.4)     29   [14.7, 45.7]
+  Overall      31.2 (+6.1)    4.2 (+0.2)    0.4 (+0.0)     48   [19.9, 45.3]
+
+PERMISSIVE, NO FREE TEXT   (parsed 48, unparsable 0, failed/missing 0)
+  Level 1      36.8 (+8.2)    5.3 (+0.2)    1.1 (+0.5)     19   [19.1, 59.0]
+  Level 2      27.6 (+5.2)    3.4 (+0.0)    0.0 (-0.4)     29   [14.7, 45.7]
+  Overall      31.2 (+6.1)    4.2 (+0.2)    0.4 (+0.0)     48   [19.9, 45.3]
+
+DIAGNOSTIC ONLY: permissive + timestamps without [] accepted   (parsed 48, unparsable 0, failed/missing 0)
+  Level 1      36.8 (+8.2)   10.5 (+5.4)    2.4 (+1.8)     19   [19.1, 59.0]
+  Level 2      27.6 (+5.2)    5.2 (+1.8)    0.0 (-0.4)     29   [14.7, 45.7]
+  Overall      31.2 (+6.1)    7.3 (+3.3)    0.9 (+0.5)     48   [19.9, 45.3]
+
+BASELINES (Acc.)
+  Level 1     always 'A'   0.0   chance  12.5
+  Level 2     always 'A'  44.8   chance  12.5
+  Overall     always 'A'  27.1   chance  12.5
+
+DIAGNOSTICS
+  answer sources (permissive): {"json_letter": {"n": 46, "correct": 14}, "truncated_json": {"n": 2, "correct": 1}}
+  stop causes: {"natural_stop": 46, "max_tokens_reached": 2}
+  format, questions with: {"fully_well_formed": 30, "has_missing_brackets": 16, "generation_cut_max_tokens_reached": 2, "json_truncated": 2}
+  format, timestamps: {"strict_ok": 62, "missing_brackets": 38}
+  letters, overall counts:
+    gt                       {"A": 13, "B": 9, "C": 5, "D": 8, "E": 5, "F": 3, "G": 3, "H": 2}
+    strict                   {"A": 5, "B": 2, "C": 2, "D": 6, "E": 6, "F": 2, "G": 5, "H": 2, "none": 18}
+    permissive               {"A": 8, "B": 3, "C": 5, "D": 9, "E": 7, "F": 4, "G": 9, "H": 3}
+    permissive_no_free_text  {"A": 8, "B": 3, "C": 5, "D": 9, "E": 7, "F": 4, "G": 9, "H": 3}
+    diag_no_brackets         {"A": 8, "B": 3, "C": 5, "D": 9, "E": 7, "F": 4, "G": 9, "H": 3}

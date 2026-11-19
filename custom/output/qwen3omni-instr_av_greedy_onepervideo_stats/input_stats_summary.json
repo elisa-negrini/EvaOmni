@@ -1,0 +1,33 @@
+{
+ "n_rows": 392,
+ "n_ok": 391,
+ "errors_by_type": {
+  "prompt_too_long": 1
+ },
+ "prompt_tokens_min_max": [
+  4945,
+  62265
+ ],
+ "video_tokens_min_max": [
+  3915,
+  52800
+ ],
+ "audio_tokens_min_max": [
+  768,
+  10125
+ ],
+ "frames_min_max": [
+  58,
+  768
+ ],
+ "video_seconds_min_max": [
+  59.01,
+  779.0
+ ],
+ "audio_seconds_min_max": [
+  59.01,
+  778.83
+ ],
+ "context_fraction_max": 0.95,
+ "n_truncated": 0
+}

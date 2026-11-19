@@ -1,0 +1,57 @@
+Run name     : qwen3omni-instr_av_greedy_full
+Description  : Main replication run: greedy decoding (model card evaluation setting), all 1027 questions, video+audio (use_audio_in_video), 1 FPS resized_video, max_tokens 16384, max_model_len 65536
+Started      : 2026-11-13T16:24:07+01:00
+Command      : /home/elisa.negrini/miniconda3/envs/av_env/bin/python custom/run_qwen_omni.py --run-name qwen3omni-instr_av_greedy_full --description 'Main replication run: greedy decoding (model card evaluation setting), all 1027 questions, video+audio (use_audio_in_video), 1 FPS resized_video, max_tokens 16384, max_model_len 65536' --subset full --input-mode av --decoding greedy --seed 1234 --max-tokens 16384 --max-model-len 65536 --gpus 3 --no-score
+Host         : coruscant
+Repo commit  : 767f30b268810fdf0544161a41d66d4d701923de
+Originals unmodified (git status outside custom/ is empty): True
+git status   : ?? custom/
+Model        : Qwen/Qwen3-Omni-30B-A3B-Instruct @ 26291f793822fb6be9555850f06dfe95f2d7e695
+Engine       : vllm.LLM (offline, V1 engine, thinker only), dtype bfloat16
+Versions     : vllm 0.17.1, torch 2.10.0, transformers 4.57.6, numpy 2.2.6, qwen-omni-utils 0.0.9, librosa 0.11.0, av 17.0.0, decord 0.6.0
+Python       : 3.12.13
+GPUs         : 3, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB
+Decoding     : greedy {"temperature": 0.0, "max_tokens": 16384}; seed 1234 (LLM(seed=seed) as in the model card, plus per-request SamplingParams(seed=sha256(f'{seed}-{qa_id}')) when sampling)
+max_model_len: 65536   long videos: no truncation, no frame dropping: prompts longer than max_model_len are recorded as status=error (error_type=prompt_too_long) and score zero
+FPS          : 1.0   use_audio_in_video: True
+Video dir    : /home/elisa.negrini/av-viewer/data/EvaOmni/resized_video
+Input mode   : av   system prompt: None   order: video first, then question text
+Prompt       : key 'video_audio' sha256 eb7a65b9e0b541b77d935d3631f12fde2f5d16c76f50b3e503abacbcf5e69149
+Subset       : full (n=1027, qa_ids sha256 c7027daa9dd1b806...)
+Stats only   : False
+vLLM runtime : gpu_memory_utilization 0.8, max_num_seqs 1, batch_size 4, workers 1
+Finished     : 2026-11-13T21:52:14+01:00  (this session 328.1 min; since first start 328.1 min)
+Questions    : 1027  succeeded 1023  failed 4 {'prompt_too_long': 4}
+
+======================================================================
+Scored       : 2026-11-13T21:52:14+01:00
+Input stats  : {"n_rows": 1027, "n_ok": 1023, "errors_by_type": {"prompt_too_long": 4}, "prompt_tokens_min_max": [4945, 62265], "video_tokens_min_max": [3915, 52800], "audio_tokens_min_max": [768, 10125], "frames_min_max": [58, 768], "video_seconds_min_max": [59.01, 779.0], "audio_seconds_min_max": [59.01, 778.83], "context_fraction_max": 0.95, "n_truncated": 0}
+[strict]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       27.1     8.9     2.2   [23.1, 31.4]   436
+Level 2       16.7     3.1     0.6   [13.5, 20.4]   438
+Level 3        9.2     0.6     0.0   [ 5.5, 14.8]   153
+Overall       20.0     5.2     1.2   [17.6, 22.5]  1027
+[permissive]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       36.0     8.9     2.2   [31.6, 40.6]   436
+Level 2       24.2     3.1     0.6   [20.4, 28.4]   438
+Level 3       24.2     0.6     0.0   [18.1, 31.5]   153
+Overall       29.2     5.2     1.2   [26.5, 32.1]  1027
+[permissive_no_free_text]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       36.0     8.9     2.2   [31.6, 40.6]   436
+Level 2       24.2     3.1     0.6   [20.4, 28.4]   438
+Level 3       24.2     0.6     0.0   [18.1, 31.5]   153
+Overall       29.2     5.2     1.2   [26.5, 32.1]  1027
+[diag_no_brackets DIAGNOSTIC ONLY]
+              Acc.    C.G.    B.G.   Acc. 95% CI     n
+Level 1       36.0    10.3     2.7   [31.6, 40.6]   436
+Level 2       24.2     4.6     0.8   [20.4, 28.4]   438
+Level 3       24.2     1.7     0.1   [18.1, 31.5]   153
+Overall       29.2     6.6     1.5   [26.5, 32.1]  1027
+Answer sources (permissive): {"json_letter": {"n": 921, "letters": {"A": 90, "B": 67, "C": 116, "D": 116, "E": 131, "F": 119, "G": 153, "H": 129}}, "no_output": {"n": 4, "letters": {"none": 4}}, "truncated_json": {"n": 102, "letters": {"A": 15, "B": 8, "C": 7, "D": 12, "E": 13, "F": 12, "G": 12, "H": 23}}}
+Predicted letters (strict, overall): {"A": 63, "B": 53, "C": 74, "D": 79, "E": 102, "F": 82, "G": 110, "H": 81, "none": 383}
+Stop causes: {"natural_stop": 921, "max_model_len_reached": 15, "max_tokens_reached": 87, "no_output": 4}
+Format, questions with: {"fully_well_formed": 644, "has_missing_brackets": 276, "json_truncated": 102, "generation_cut_max_tokens_reached": 87, "generation_cut_max_model_len_reached": 15, "has_zero_length": 4, "no_output_or_infer_error": 4, "empty_visual_evidence_list": 3, "has_single_point": 1}
+Format, timestamps: {"strict_ok": 1438, "missing_brackets": 751, "single_point": 11, "zero_length": 6}

@@ -1,0 +1,1291 @@
+{
+ "results_source": "custom/output/qwen3omni-instr_av_greedy_check10",
+ "n_questions": 10,
+ "n_result_rows_in_scope": 10,
+ "result_rows_out_of_scope": [],
+ "strict": {
+  "summary": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 20.0,
+    "C.G.": 10.0,
+    "B.G.": 2.5,
+    "Mean": 2.5,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     5.668215093776685,
+     50.98375308778677
+    ]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 20.0,
+    "C.G.": 10.0,
+    "B.G.": 2.5,
+    "Mean": 2.5,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     5.668215093776685,
+     50.98375308778677
+    ]
+   }
+  },
+  "diagnostics": {
+   "ok": 9,
+   "infer_error_or_missing": 0,
+   "parse_fail": 1,
+   "notes": {
+    "45": "ValueError: Invalid timestamp: '06:48,06:50'"
+   }
+  },
+  "pred_letter_distribution": {
+   "Overall": {
+    "A": 1,
+    "B": 1,
+    "E": 1,
+    "F": 1,
+    "G": 3,
+    "H": 2,
+    "none": 1
+   },
+   "Level 1": {
+    "A": 1,
+    "B": 1,
+    "E": 1,
+    "F": 1,
+    "G": 3,
+    "H": 2,
+    "none": 1
+   }
+  },
+  "invalid_predictions": [],
+  "per_question": [
+   {
+    "qa_id": 7,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 45,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 62,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.16666666666666666,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 190,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 348,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 416,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 418,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.5,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.41666666666666663,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 459,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.45454545454545453,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.22727272727272727,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 507,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.25,
+    "visual_iou": 0.25,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.25,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.25,
+     "Mean": 0.25,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 854,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   }
+  ],
+  "by_capability": {
+   "Event Binding": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Alignment": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 4,
+    "Acc.": 50.0,
+    "C.G.": 25.0,
+    "B.G.": 6.25,
+    "Mean": 6.25,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  }
+ },
+ "permissive": {
+  "summary": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 20.0,
+    "C.G.": 10.0,
+    "B.G.": 2.5,
+    "Mean": 2.5,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     5.668215093776685,
+     50.98375308778677
+    ]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 20.0,
+    "C.G.": 10.0,
+    "B.G.": 2.5,
+    "Mean": 2.5,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     5.668215093776685,
+     50.98375308778677
+    ]
+   }
+  },
+  "diagnostics": {
+   "ok": 10,
+   "infer_error_or_missing": 0,
+   "parse_fail": 0,
+   "notes": {
+    "45": "dropped 2 unreadable interval(s)"
+   }
+  },
+  "pred_letter_distribution": {
+   "Overall": {
+    "A": 1,
+    "B": 1,
+    "E": 1,
+    "F": 1,
+    "G": 4,
+    "H": 2
+   },
+   "Level 1": {
+    "A": 1,
+    "B": 1,
+    "E": 1,
+    "F": 1,
+    "G": 4,
+    "H": 2
+   }
+  },
+  "invalid_predictions": [],
+  "per_question": [
+   {
+    "qa_id": 7,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 45,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 62,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.16666666666666666,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 190,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 348,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 416,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 418,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.5,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.41666666666666663,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 459,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.45454545454545453,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.22727272727272727,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 507,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.25,
+    "visual_iou": 0.25,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.25,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.25,
+     "Mean": 0.25,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 854,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   }
+  ],
+  "by_capability": {
+   "Event Binding": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Alignment": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 4,
+    "Acc.": 50.0,
+    "C.G.": 25.0,
+    "B.G.": 6.25,
+    "Mean": 6.25,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  }
+ },
+ "permissive_no_free_text": {
+  "summary": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 20.0,
+    "C.G.": 10.0,
+    "B.G.": 2.5,
+    "Mean": 2.5,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     5.668215093776685,
+     50.98375308778677
+    ]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 20.0,
+    "C.G.": 10.0,
+    "B.G.": 2.5,
+    "Mean": 2.5,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     5.668215093776685,
+     50.98375308778677
+    ]
+   }
+  },
+  "diagnostics": {
+   "ok": 10,
+   "infer_error_or_missing": 0,
+   "parse_fail": 0,
+   "notes": {
+    "45": "dropped 2 unreadable interval(s)"
+   }
+  },
+  "pred_letter_distribution": {
+   "Overall": {
+    "A": 1,
+    "B": 1,
+    "E": 1,
+    "F": 1,
+    "G": 4,
+    "H": 2
+   },
+   "Level 1": {
+    "A": 1,
+    "B": 1,
+    "E": 1,
+    "F": 1,
+    "G": 4,
+    "H": 2
+   }
+  },
+  "invalid_predictions": [],
+  "per_question": [
+   {
+    "qa_id": 7,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 45,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 62,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.16666666666666666,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 190,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 348,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 416,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 418,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.5,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.41666666666666663,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 459,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.45454545454545453,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.22727272727272727,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 507,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.25,
+    "visual_iou": 0.25,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.25,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.25,
+     "Mean": 0.25,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 854,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   }
+  ],
+  "by_capability": {
+   "Event Binding": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Alignment": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 4,
+    "Acc.": 50.0,
+    "C.G.": 25.0,
+    "B.G.": 6.25,
+    "Mean": 6.25,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  }
+ },
+ "diag_no_brackets": {
+  "summary": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 20.0,
+    "C.G.": 10.0,
+    "B.G.": 2.5,
+    "Mean": 2.5,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     5.668215093776685,
+     50.98375308778677
+    ]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 20.0,
+    "C.G.": 10.0,
+    "B.G.": 2.5,
+    "Mean": 2.5,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     5.668215093776685,
+     50.98375308778677
+    ]
+   }
+  },
+  "diagnostics": {
+   "ok": 10,
+   "infer_error_or_missing": 0,
+   "parse_fail": 0,
+   "notes": {}
+  },
+  "pred_letter_distribution": {
+   "Overall": {
+    "A": 1,
+    "B": 1,
+    "E": 1,
+    "F": 1,
+    "G": 4,
+    "H": 2
+   },
+   "Level 1": {
+    "A": 1,
+    "B": 1,
+    "E": 1,
+    "F": 1,
+    "G": 4,
+    "H": 2
+   }
+  },
+  "invalid_predictions": [],
+  "per_question": [
+   {
+    "qa_id": 7,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 45,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 62,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.16666666666666666,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 190,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 348,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 416,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 418,
+    "level": 1,
+    "capability": "Event Binding",
+    "audio_iou": 0.5,
+    "visual_iou": 0.3333333333333333,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.41666666666666663,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 459,
+    "level": 1,
+    "capability": "Temporal Alignment",
+    "audio_iou": 0.0,
+    "visual_iou": 0.45454545454545453,
+    "audio_coverage": 0.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.22727272727272727,
+    "scores": {
+     "Acc.": 0,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 507,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.25,
+    "visual_iou": 0.25,
+    "audio_coverage": 1.0,
+    "visual_coverage": 1.0,
+    "mean_iou": 0.25,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 1.0,
+     "B.G.": 0.25,
+     "Mean": 0.25,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   },
+   {
+    "qa_id": 854,
+    "level": 1,
+    "capability": "Entity Binding",
+    "audio_iou": 0.0,
+    "visual_iou": 0.0,
+    "audio_coverage": 0.0,
+    "visual_coverage": 0.0,
+    "mean_iou": 0.0,
+    "scores": {
+     "Acc.": 1,
+     "C.G.": 0.0,
+     "B.G.": 0.0,
+     "Mean": 0.0,
+     "Thr@0.3": 0,
+     "Thr@0.5": 0,
+     "Thr@0.7": 0
+    }
+   }
+  ],
+  "by_capability": {
+   "Event Binding": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Alignment": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 4,
+    "Acc.": 50.0,
+    "C.G.": 25.0,
+    "B.G.": 6.25,
+    "Mean": 6.25,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  }
+ },
+ "answer_sources": {
+  "json_letter": {
+   "n": 10,
+   "correct": 2,
+   "acc_within_group": 20.0,
+   "letters": {
+    "A": 1,
+    "B": 1,
+    "E": 1,
+    "F": 1,
+    "G": 4,
+    "H": 2
+   },
+   "qa_ids": null
+  }
+ },
+ "format_errors": {
+  "n_questions": 10,
+  "questions_with": {
+   "fully_well_formed": 9,
+   "has_missing_brackets": 1
+  },
+  "timestamps": {
+   "strict_ok": 18,
+   "missing_brackets": 2
+  },
+  "example_qa_ids": {
+   "strict_ok": [
+    7,
+    62,
+    190,
+    348,
+    416,
+    418,
+    459,
+    507,
+    854
+   ],
+   "fully_well_formed": [
+    7,
+    62,
+    190,
+    348,
+    416,
+    418,
+    459,
+    507,
+    854
+   ],
+   "missing_brackets": [
+    45
+   ],
+   "has_missing_brackets": [
+    45
+   ]
+  }
+ },
+ "stop_causes": {
+  "natural_stop": 10
+ },
+ "gt_letter_distribution": {
+  "Overall": {
+   "A": 1,
+   "B": 1,
+   "C": 1,
+   "E": 1,
+   "F": 2,
+   "G": 3,
+   "H": 1
+  },
+  "Level 1": {
+   "A": 1,
+   "B": 1,
+   "C": 1,
+   "E": 1,
+   "F": 2,
+   "G": 3,
+   "H": 1
+  }
+ },
+ "baselines": {
+  "always_A": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 10.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     1.7876212896073995,
+     40.41500295247722
+    ]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 10.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [
+     1.7876212896073995,
+     40.41500295247722
+    ]
+   }
+  },
+  "chance": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 12.5
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 12.5
+   }
+  }
+ },
+ "input_stats": {
+  "n_rows": 10,
+  "n_ok": 10,
+  "errors_by_type": {},
+  "prompt_tokens_min_max": [
+   15200,
+   46770
+  ],
+  "video_tokens_min_max": [
+   12555,
+   38880
+  ],
+  "audio_tokens_min_max": [
+   2428,
+   7502
+  ],
+  "frames_min_max": [
+   186,
+   576
+  ],
+  "video_seconds_min_max": [
+   187.0,
+   577.05
+  ],
+  "audio_seconds_min_max": [
+   186.75,
+   577.05
+  ],
+  "context_fraction_max": 0.714,
+  "n_truncated": 0
+ }
+}

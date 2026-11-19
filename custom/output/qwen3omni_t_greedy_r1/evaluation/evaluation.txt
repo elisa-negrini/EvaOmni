@@ -1,0 +1,61 @@
+EvaOmni evaluation: qwen3omni_t_greedy_r1
+Modality ablation run 1 of 2: text only (question and options), all 1027 questions; greedy, max_tokens 2048, missing inputs omitted, repository prompt for this input
+
+Model    : Qwen/Qwen3-Omni-30B-A3B-Instruct
+Subset   : full (n=1027)   decoding: greedy   input: t   seed: 1234
+Scored   : 2026-11-17T16:57:48+01:00
+Paper    : Table 2, Qwen3-Omni-Instruct-30B-A3B (all 1027 questions)
+INPUT    : t only (question and options, no video, no audio). The PAPER rows are Table 2 (video+audio input),
+           shown for reference only, no differences printed.
+           Paper Table 6(d), Qwen3-Omni-Instruct-30B-A3B, this input: not reported (Table 6(d) text-only uses other models)
+           Evidence lists the prompt does not ask for are scored as empty: C.G. <= Acc./2, B.G. = 0.
+Values in %. Failed or missing answers count 0.
+
+                      Acc.          C.G.          B.G.      n   Acc. 95% CI
+PAPER
+  Level 1             28.6           5.1           0.6
+  Level 2             22.4           3.4           0.4
+  Level 3             22.2           2.4           0.1
+  Overall             25.2           4.0           0.4
+
+STRICT   (parsed 1027, unparsable 0, failed/missing 0)
+  Level 1              8.5           0.0           0.0    436   [6.2, 11.5]
+  Level 2              9.4           0.0           0.0    438   [7.0, 12.5]
+  Level 3              3.3           0.0           0.0    153   [1.4, 7.4]
+  Overall              8.1           0.0           0.0   1027   [6.6, 9.9]
+
+PERMISSIVE   (parsed 1027, unparsable 0, failed/missing 0)
+  Level 1              8.5           0.0           0.0    436   [6.2, 11.5]
+  Level 2              9.4           0.0           0.0    438   [7.0, 12.5]
+  Level 3              3.3           0.0           0.0    153   [1.4, 7.4]
+  Overall              8.1           0.0           0.0   1027   [6.6, 9.9]
+
+PERMISSIVE, NO FREE TEXT   (parsed 1027, unparsable 0, failed/missing 0)
+  Level 1              8.5           0.0           0.0    436   [6.2, 11.5]
+  Level 2              9.4           0.0           0.0    438   [7.0, 12.5]
+  Level 3              3.3           0.0           0.0    153   [1.4, 7.4]
+  Overall              8.1           0.0           0.0   1027   [6.6, 9.9]
+
+DIAGNOSTIC ONLY: permissive + timestamps without [] accepted   (parsed 1027, unparsable 0, failed/missing 0)
+  Level 1              8.5           0.0           0.0    436   [6.2, 11.5]
+  Level 2              9.4           0.0           0.0    438   [7.0, 12.5]
+  Level 3              3.3           0.0           0.0    153   [1.4, 7.4]
+  Overall              8.1           0.0           0.0   1027   [6.6, 9.9]
+
+BASELINES (Acc.)
+  Level 1     always 'A'  11.7   chance  12.5
+  Level 2     always 'A'  27.4   chance  12.5
+  Level 3     always 'A'  17.0   chance  12.5
+  Overall     always 'A'  19.2   chance  12.5
+
+DIAGNOSTICS
+  answer sources (permissive): {"json_letter": {"n": 1027, "correct": 83}}
+  stop causes: {"natural_stop": 1027}
+  format, questions with: {"missing_audio_evidence_list": 1027, "missing_visual_evidence_list": 1027}
+  format, timestamps: {}
+  letters, overall counts:
+    gt                       {"A": 197, "B": 136, "C": 113, "D": 118, "E": 138, "F": 104, "G": 118, "H": 103}
+    strict                   {"A": 79, "B": 98, "C": 173, "D": 112, "E": 167, "F": 124, "G": 116, "H": 158}
+    permissive               {"A": 79, "B": 98, "C": 173, "D": 112, "E": 167, "F": 124, "G": 116, "H": 158}
+    permissive_no_free_text  {"A": 79, "B": 98, "C": 173, "D": 112, "E": 167, "F": 124, "G": 116, "H": 158}
+    diag_no_brackets         {"A": 79, "B": 98, "C": 173, "D": 112, "E": 167, "F": 124, "G": 116, "H": 158}

@@ -1,0 +1,380 @@
+{
+ "qa_id": 62,
+ "video_id": "029",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-18T13:58:23+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 577.05,
+  "frames": 576,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9982668977469671,
+  "audio_seconds": 577.05,
+  "audio_peak": 0.48567867279052734,
+  "preprocess_s": 3.7,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[57.0, 61.0]],
+   "control_infeasible": false,
+   "segments_s": [[107.608, 111.608]],
+   "masked_seconds": 4.0,
+   "noise_rms": 0.054874,
+   "audio_sha256": "1aa36671444b9d3241bc06cdec96526ce66ff49115cd9042a53665b5f72be25b"
+  },
+  "prompt_tokens": 46770,
+  "video_tokens": 38880,
+  "audio_tokens": 7502,
+  "text_and_special_tokens": 388,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.714
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:00,01:01]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:57,01:00]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 854,
+ "video_id": "053",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-18T13:58:23+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 386.0,
+  "frames": 386,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 385.93,
+  "audio_peak": 0.8570728302001953,
+  "preprocess_s": 2.88,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[196.0, 201.0]],
+   "control_infeasible": false,
+   "segments_s": [[129.522, 134.522]],
+   "masked_seconds": 5.0,
+   "noise_rms": 0.066249,
+   "audio_sha256": "8bd88291c911018993dfde5987cdd923324997f7c195c3583a534288f22162b8"
+  },
+  "prompt_tokens": 31378,
+  "video_tokens": 26055,
+  "audio_tokens": 5017,
+  "text_and_special_tokens": 306,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.479
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"H\",\n  \"visual_evidence\": [\n    {\"time\": \"[02:55,02:57]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[02:55,02:57]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 416,
+ "video_id": "054",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-18T13:58:23+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 220.0,
+  "frames": 220,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 219.77,
+  "audio_peak": 0.9412442445755005,
+  "preprocess_s": 2.3,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[55.0, 60.0]],
+   "control_infeasible": false,
+   "segments_s": [[180.367, 185.367]],
+   "masked_seconds": 5.0,
+   "noise_rms": 0.070685,
+   "audio_sha256": "1f584206ca8e38a89b144f269269dafb203cc2f65d45824becdeb399f65e3999"
+  },
+  "prompt_tokens": 18021,
+  "video_tokens": 14850,
+  "audio_tokens": 2857,
+  "text_and_special_tokens": 314,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.275
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"A\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:45,00:46]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:45,00:46]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 190,
+ "video_id": "202",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-18T13:58:23+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 187.0,
+  "frames": 186,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9946524064171123,
+  "audio_seconds": 186.75,
+  "audio_peak": 0.6337144374847412,
+  "preprocess_s": 1.13,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[62.0, 66.0]],
+   "control_infeasible": false,
+   "segments_s": [[0.101, 4.101]],
+   "masked_seconds": 4.0,
+   "noise_rms": 0.03318,
+   "audio_sha256": "0cfdc764a5f3d908ee250837650059a63181d7b4c6534af9ff738b25e155ce25"
+  },
+  "prompt_tokens": 15200,
+  "video_tokens": 12555,
+  "audio_tokens": 2428,
+  "text_and_special_tokens": 217,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.232
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:01,01:02]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[01:00,01:01]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 45,
+ "video_id": "275",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-18T13:58:41+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 510.13,
+  "frames": 510,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 510.13,
+  "audio_peak": 1.0505948066711426,
+  "preprocess_s": 3.14,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[478.0, 483.0]],
+   "control_infeasible": false,
+   "segments_s": [[119.365, 124.365]],
+   "masked_seconds": 5.0,
+   "noise_rms": 0.128246,
+   "audio_sha256": "2429281a2846d07f84ecc5b108dc76d531c98c14e35f1e69cd6f746b2b6bd213"
+  },
+  "prompt_tokens": 41344,
+  "video_tokens": 34425,
+  "audio_tokens": 6632,
+  "text_and_special_tokens": 287,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.631
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"06:47,06:50\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"06:47,06:48\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 418,
+ "video_id": "340",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-18T13:58:41+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 379.31,
+  "frames": 378,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9973614775725593,
+  "audio_seconds": 379.31,
+  "audio_peak": 0.951419472694397,
+  "preprocess_s": 2.62,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[51.0, 56.0]],
+   "control_infeasible": false,
+   "segments_s": [[216.376, 221.376]],
+   "masked_seconds": 5.0,
+   "noise_rms": 0.052626,
+   "audio_sha256": "2c9a9f420409aa5ea1eee634f529ceff0b29bffd969d1798589f0ca5ed59b018"
+  },
+  "prompt_tokens": 30728,
+  "video_tokens": 25515,
+  "audio_tokens": 4931,
+  "text_and_special_tokens": 282,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.469
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"H\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:53,00:55]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:51,00:54]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 7,
+ "video_id": "344",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-18T13:58:41+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 530.05,
+  "frames": 530,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 530.05,
+  "audio_peak": 0.6502441167831421,
+  "preprocess_s": 3.37,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[118.0, 125.0]],
+   "control_infeasible": false,
+   "segments_s": [[470.225, 477.225]],
+   "masked_seconds": 7.0,
+   "noise_rms": 0.076232,
+   "audio_sha256": "2c91329935f5acf4bc7b5daafe92010b26834dfbb6e8dffe90ead5efada07924"
+  },
+  "prompt_tokens": 42982,
+  "video_tokens": 35775,
+  "audio_tokens": 6891,
+  "text_and_special_tokens": 316,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.656
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"B\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:41,01:45]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[01:41,01:45]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 348,
+ "video_id": "368",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-18T13:58:41+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 204.25,
+  "frames": 204,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 1.0,
+  "audio_seconds": 204.25,
+  "audio_peak": 0.9634941816329956,
+  "preprocess_s": 1.06,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[96.0, 101.0]],
+   "control_infeasible": false,
+   "segments_s": [[167.155, 172.155]],
+   "masked_seconds": 5.0,
+   "noise_rms": 0.08499,
+   "audio_sha256": "8fd778d7190facc0c893b75aa918a1a4ad7a6bb01b3befc558a6ff5b741945d8"
+  },
+  "prompt_tokens": 16739,
+  "video_tokens": 13770,
+  "audio_tokens": 2656,
+  "text_and_special_tokens": 313,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.255
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"visual_evidence\": [\n    {\"time\": \"[01:31,01:33]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[01:31,01:33]\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 459,
+ "video_id": "383",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-18T13:58:49+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 247.0,
+  "frames": 246,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9959514170040485,
+  "audio_seconds": 246.71,
+  "audio_peak": 0.8163782358169556,
+  "preprocess_s": 1.05,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[105.0, 113.0]],
+   "control_infeasible": false,
+   "segments_s": [[19.101, 27.101]],
+   "masked_seconds": 8.0,
+   "noise_rms": 0.115241,
+   "audio_sha256": "9facca220ed670043e5ab394822c132ea8840da7249d40480eb5b8a4dcf28630"
+  },
+  "prompt_tokens": 20150,
+  "video_tokens": 16605,
+  "audio_tokens": 3207,
+  "text_and_special_tokens": 338,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.307
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 66,
+  "raw_response": "```json\n{\n  \"answer\": \"F\",\n  \"visual_evidence\": [\n    {\"time\": \"01:45,01:50\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"01:45,01:50\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 507,
+ "video_id": "392",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-18T13:58:49+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 395.0,
+  "frames": 394,
+  "frame_hw_after_qwen_omni_utils": [280, 476],
+  "sample_fps": 0.9974683544303797,
+  "audio_seconds": 394.9,
+  "audio_peak": 0.843799352645874,
+  "preprocess_s": 1.56,
+  "audio_mask": {
+   "target": "random",
+   "fill": "noise",
+   "evidence_segments_s": [[29.0, 34.0]],
+   "control_infeasible": false,
+   "segments_s": [[92.049, 97.049]],
+   "masked_seconds": 5.0,
+   "noise_rms": 0.082519,
+   "audio_sha256": "7ce8cd662f7ea32bde6a206536d8429e04bf421d42575d07ec9d18a3791f8beb"
+  },
+  "prompt_tokens": 31972,
+  "video_tokens": 26595,
+  "audio_tokens": 5134,
+  "text_and_special_tokens": 243,
+  "video_tokens_per_temporal_grid": 135.0,
+  "context_fraction": 0.488
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 68,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"visual_evidence\": [\n    {\"time\": \"[00:29,00:32]\"}\n  ],\n  \"audio_evidence\": [\n    {\"time\": \"[00:29,00:32]\"}\n  ]\n}\n```"
+ }
+}

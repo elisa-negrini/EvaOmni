@@ -1,0 +1,250 @@
+{
+ "qa_id": 62,
+ "video_id": "029",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-17T16:43:10+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 577.05,
+  "audio_seconds": 577.05,
+  "audio_peak": 0.48567867279052734,
+  "preprocess_s": 1.95,
+  "prompt_tokens": 7864,
+  "video_tokens": 0,
+  "audio_tokens": 7502,
+  "text_and_special_tokens": 362,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.12
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 40,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"audio_evidence\": [\n    {\"time\": \"00:38,00:40\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 854,
+ "video_id": "053",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-17T16:43:10+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 386.0,
+  "audio_seconds": 385.93,
+  "audio_peak": 0.8570728302001953,
+  "preprocess_s": 1.78,
+  "prompt_tokens": 5297,
+  "video_tokens": 0,
+  "audio_tokens": 5017,
+  "text_and_special_tokens": 280,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.081
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 40,
+  "raw_response": "```json\n{\n  \"answer\": \"A\",\n  \"audio_evidence\": [\n    {\"time\": \"02:47,02:50\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 416,
+ "video_id": "054",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-17T16:43:10+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 220.0,
+  "audio_seconds": 219.77,
+  "audio_peak": 0.9412442445755005,
+  "preprocess_s": 1.67,
+  "prompt_tokens": 3145,
+  "video_tokens": 0,
+  "audio_tokens": 2857,
+  "text_and_special_tokens": 288,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.048
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 40,
+  "raw_response": "```json\n{\n  \"answer\": \"F\",\n  \"audio_evidence\": [\n    {\"time\": \"00:45,00:46\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 190,
+ "video_id": "202",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-17T16:43:10+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 187.0,
+  "audio_seconds": 186.75,
+  "audio_peak": 0.6337144374847412,
+  "preprocess_s": 0.34,
+  "prompt_tokens": 2619,
+  "video_tokens": 0,
+  "audio_tokens": 2428,
+  "text_and_special_tokens": 191,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.04
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 40,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"audio_evidence\": [\n    {\"time\": \"01:02,01:03\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 45,
+ "video_id": "275",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-17T16:43:13+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 510.13,
+  "audio_seconds": 510.13,
+  "audio_peak": 1.0505948066711426,
+  "preprocess_s": 1.89,
+  "prompt_tokens": 6893,
+  "video_tokens": 0,
+  "audio_tokens": 6632,
+  "text_and_special_tokens": 261,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.105
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 40,
+  "raw_response": "```json\n{\n  \"answer\": \"G\",\n  \"audio_evidence\": [\n    {\"time\": \"05:07,05:10\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 418,
+ "video_id": "340",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-17T16:43:13+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 379.31,
+  "audio_seconds": 379.31,
+  "audio_peak": 0.951419472694397,
+  "preprocess_s": 1.57,
+  "prompt_tokens": 5187,
+  "video_tokens": 0,
+  "audio_tokens": 4931,
+  "text_and_special_tokens": 256,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.079
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 40,
+  "raw_response": "```json\n{\n  \"answer\": \"C\",\n  \"audio_evidence\": [\n    {\"time\": \"00:58,01:00\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 7,
+ "video_id": "344",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-17T16:43:13+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 530.05,
+  "audio_seconds": 530.05,
+  "audio_peak": 0.6502441167831421,
+  "preprocess_s": 1.75,
+  "prompt_tokens": 7181,
+  "video_tokens": 0,
+  "audio_tokens": 6891,
+  "text_and_special_tokens": 290,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.11
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 44,
+  "raw_response": "```json\n{\n  \"answer\": \"B\",\n  \"audio_evidence\": [\n    {\n      \"time\": \"01:47,01:50\"\n    }\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 348,
+ "video_id": "368",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-17T16:43:13+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 204.25,
+  "audio_seconds": 204.25,
+  "audio_peak": 0.9634941816329956,
+  "preprocess_s": 0.33,
+  "prompt_tokens": 2943,
+  "video_tokens": 0,
+  "audio_tokens": 2656,
+  "text_and_special_tokens": 287,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.045
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 40,
+  "raw_response": "```json\n{\n  \"answer\": \"F\",\n  \"audio_evidence\": [\n    {\"time\": \"01:02,01:04\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 459,
+ "video_id": "383",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-17T16:43:14+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 247.0,
+  "audio_seconds": 246.71,
+  "audio_peak": 0.8163782358169556,
+  "preprocess_s": 0.55,
+  "prompt_tokens": 3519,
+  "video_tokens": 0,
+  "audio_tokens": 3207,
+  "text_and_special_tokens": 312,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.054
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 40,
+  "raw_response": "```json\n{\n  \"answer\": \"F\",\n  \"audio_evidence\": [\n    {\"time\": \"01:31,01:33\"}\n  ]\n}\n```"
+ }
+}
+{
+ "qa_id": 507,
+ "video_id": "392",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-17T16:43:14+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 395.0,
+  "audio_seconds": 394.9,
+  "audio_peak": 0.843799352645874,
+  "preprocess_s": 0.69,
+  "prompt_tokens": 5351,
+  "video_tokens": 0,
+  "audio_tokens": 5134,
+  "text_and_special_tokens": 217,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.082
+ },
+ "output": {
+  "stop_cause": "natural_stop",
+  "n_output_tokens": 40,
+  "raw_response": "```json\n{\n  \"answer\": \"E\",\n  \"audio_evidence\": [\n    {\"time\": \"00:30,00:32\"}\n  ]\n}\n```"
+ }
+}

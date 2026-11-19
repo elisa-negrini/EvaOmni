@@ -1,0 +1,53 @@
+EvaOmni evaluation: qwen3omni_t_greedy_check10
+Test of the modality ablation input 't' (missing inputs omitted, repository prompt for this input), greedy, max_tokens 2048, 10 questions
+
+Model    : Qwen/Qwen3-Omni-30B-A3B-Instruct
+Subset   : check10-l1 (n=10)   decoding: greedy   input: t   seed: 1234
+Scored   : 2026-11-17T16:49:18+01:00
+Paper    : Table 2, Qwen3-Omni-Instruct-30B-A3B (all 1027 questions)
+INPUT    : t only (question and options, no video, no audio). The PAPER rows are Table 2 (video+audio input),
+           shown for reference only, no differences printed.
+           Paper Table 6(d), Qwen3-Omni-Instruct-30B-A3B, this input: not reported (Table 6(d) text-only uses other models)
+           Evidence lists the prompt does not ask for are scored as empty: C.G. <= Acc./2, B.G. = 0.
+Values in %. Failed or missing answers count 0.
+
+WARNING: 10 questions, not the full benchmark; the paper's numbers are on all 1027 questions.
+
+                      Acc.          C.G.          B.G.      n   Acc. 95% CI
+PAPER
+  Level 1             28.6           5.1           0.6
+  Level 2             22.4           3.4           0.4
+  Level 3             22.2           2.4           0.1
+  Overall             25.2           4.0           0.4
+
+STRICT   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1              0.0           0.0           0.0     10   [0.0, 27.8]
+  Overall              0.0           0.0           0.0     10   [0.0, 27.8]
+
+PERMISSIVE   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1              0.0           0.0           0.0     10   [0.0, 27.8]
+  Overall              0.0           0.0           0.0     10   [0.0, 27.8]
+
+PERMISSIVE, NO FREE TEXT   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1              0.0           0.0           0.0     10   [0.0, 27.8]
+  Overall              0.0           0.0           0.0     10   [0.0, 27.8]
+
+DIAGNOSTIC ONLY: permissive + timestamps without [] accepted   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1              0.0           0.0           0.0     10   [0.0, 27.8]
+  Overall              0.0           0.0           0.0     10   [0.0, 27.8]
+
+BASELINES (Acc.)
+  Level 1     always 'A'  10.0   chance  12.5
+  Overall     always 'A'  10.0   chance  12.5
+
+DIAGNOSTICS
+  answer sources (permissive): {"json_letter": {"n": 10, "correct": 0}}
+  stop causes: {"natural_stop": 10}
+  format, questions with: {"missing_audio_evidence_list": 10, "missing_visual_evidence_list": 10}
+  format, timestamps: {}
+  letters, overall counts:
+    gt                       {"A": 1, "B": 1, "C": 1, "E": 1, "F": 2, "G": 3, "H": 1}
+    strict                   {"B": 1, "C": 2, "E": 2, "F": 3, "G": 2}
+    permissive               {"B": 1, "C": 2, "E": 2, "F": 3, "G": 2}
+    permissive_no_free_text  {"B": 1, "C": 2, "E": 2, "F": 3, "G": 2}
+    diag_no_brackets         {"B": 1, "C": 2, "E": 2, "F": 3, "G": 2}

@@ -1,0 +1,74 @@
+EvaOmni evaluation: qwen3omni_v_greedy_r1
+Modality ablation run 1 of 2: video only (no audio), all 1027 questions; greedy, max_tokens 2048, missing inputs omitted, repository prompt for this input
+
+Model    : Qwen/Qwen3-Omni-30B-A3B-Instruct
+Subset   : full (n=1027)   decoding: greedy   input: v   seed: 1234
+Scored   : 2026-11-17T19:19:55+01:00
+Paper    : Table 2, Qwen3-Omni-Instruct-30B-A3B (all 1027 questions)
+INPUT    : v only (video frames, no audio). The PAPER rows are Table 2 (video+audio input),
+           shown for reference only, no differences printed.
+           Paper Table 6(d), Qwen3-Omni-Instruct-30B-A3B, this input: 12.5 (Acc. only; a question counts only if correct in BOTH of two runs: custom/tools/both_runs_acc.py RUN1 RUN2)
+           Evidence lists the prompt does not ask for are scored as empty: C.G. <= Acc./2, B.G. = 0.
+Values in %. Failed or missing answers count 0.
+
+                      Acc.          C.G.          B.G.      n   Acc. 95% CI
+PAPER
+  Level 1             28.6           5.1           0.6
+  Level 2             22.4           3.4           0.4
+  Level 3             22.2           2.4           0.1
+  Overall             25.2           4.0           0.4
+
+STRICT   (parsed 302, unparsable 725, failed/missing 0)
+  Level 1              5.3           1.1           0.0    436   [3.5, 7.8]
+  Level 2              5.0           0.5           0.0    438   [3.3, 7.5]
+  Level 3              1.3           0.1           0.0    153   [0.4, 4.6]
+  Overall              4.6           0.7           0.0   1027   [3.5, 6.0]
+
+PERMISSIVE   (parsed 1027, unparsable 0, failed/missing 0)
+  Level 1             18.3           1.1           0.0    436   [15.0, 22.3]
+  Level 2             15.3           0.5           0.0    438   [12.2, 19.0]
+  Level 3             14.4           0.1           0.0    153   [9.7, 20.8]
+  Overall             16.5           0.7           0.0   1027   [14.3, 18.8]
+
+PERMISSIVE, NO FREE TEXT   (parsed 1027, unparsable 0, failed/missing 0)
+  Level 1             18.3           1.1           0.0    436   [15.0, 22.3]
+  Level 2             15.3           0.5           0.0    438   [12.2, 19.0]
+  Level 3             14.4           0.1           0.0    153   [9.7, 20.8]
+  Overall             16.5           0.7           0.0   1027   [14.3, 18.8]
+
+DIAGNOSTIC ONLY: permissive + timestamps without [] accepted   (parsed 1027, unparsable 0, failed/missing 0)
+  Level 1             18.3           2.4           0.0    436   [15.0, 22.3]
+  Level 2             15.3           1.4           0.0    438   [12.2, 19.0]
+  Level 3             14.4           0.8           0.0    153   [9.7, 20.8]
+  Overall             16.5           1.7           0.0   1027   [14.3, 18.8]
+
+GROUNDING OF THE GIVEN MODALITY (visual) ALONE
+  cov-grounded = mean(correct x coverage), IoU-grounded = mean(correct x IoU) on this modality;
+  'if correct' = mean coverage / IoU over the correct answers only
+                               Acc.  cov-grnd  IoU-grnd  cov|ok  IoU|ok
+  strict         Level 1        5.3       2.3       1.1    43.5    20.0
+  strict         Level 2        5.0       0.9       0.5    18.2     9.1
+  strict         Level 3        1.3       0.2       0.0    16.7     1.4
+  strict         Overall        4.6       1.4       0.6    30.5    14.1
+  diag_no_bracke Level 1       18.3       4.8       2.2    26.2    12.2
+  diag_no_bracke Level 2       15.3       2.7       0.9    17.9     5.6
+  diag_no_bracke Level 3       14.4       1.5       0.4    10.6     2.8
+  diag_no_bracke Overall       16.5       3.4       1.4    20.9     8.3
+
+BASELINES (Acc.)
+  Level 1     always 'A'  11.7   chance  12.5
+  Level 2     always 'A'  27.4   chance  12.5
+  Level 3     always 'A'  17.0   chance  12.5
+  Overall     always 'A'  19.2   chance  12.5
+
+DIAGNOSTICS
+  answer sources (permissive): {"json_letter": {"n": 935, "correct": 158}, "truncated_json": {"n": 92, "correct": 11}}
+  stop causes: {"natural_stop": 935, "max_tokens_reached": 92}
+  format, questions with: {"missing_audio_evidence_list": 935, "has_missing_brackets": 594, "generation_cut_max_tokens_reached": 92, "json_truncated": 92, "has_single_point": 38, "has_zero_length": 20, "empty_visual_evidence_list": 2}
+  format, timestamps: {"missing_brackets": 663, "strict_ok": 348, "single_point": 58, "zero_length": 22}
+  letters, overall counts:
+    gt                       {"A": 197, "B": 136, "C": 113, "D": 118, "E": 138, "F": 104, "G": 118, "H": 103}
+    strict                   {"A": 21, "B": 23, "C": 48, "D": 39, "E": 48, "F": 40, "G": 50, "H": 33, "none": 725}
+    permissive               {"A": 110, "B": 90, "C": 153, "D": 119, "E": 134, "F": 123, "G": 165, "H": 133}
+    permissive_no_free_text  {"A": 110, "B": 90, "C": 153, "D": 119, "E": 134, "F": 123, "G": 165, "H": 133}
+    diag_no_brackets         {"A": 110, "B": 90, "C": 153, "D": 119, "E": 134, "F": 123, "G": 165, "H": 133}

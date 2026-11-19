@@ -1,0 +1,49 @@
+EvaOmni evaluation: qwen3omni_av-maskrand-noise_greedy_check10
+Test: random control segments replaced by noise, 10 questions; greedy, max_tokens 2048, pad 1 s, fade 10 ms; otherwise as qwen3omni_av_greedy_maxtok-2048
+
+Model    : Qwen/Qwen3-Omni-30B-A3B-Instruct
+Subset   : check10-l1 (n=10)   decoding: greedy   input: av   seed: 1234
+Scored   : 2026-11-18T13:59:11+01:00
+Paper    : Table 2, Qwen3-Omni-Instruct-30B-A3B (all 1027 questions)
+Values in %. Failed or missing answers count 0. In brackets: ours - paper.
+
+WARNING: 10 questions, not the full benchmark; the paper's numbers are on all 1027 questions.
+
+                      Acc.          C.G.          B.G.      n   Acc. 95% CI
+PAPER
+  Level 1             28.6           5.1           0.6
+  Level 2             22.4           3.4           0.4
+  Level 3             22.2           2.4           0.1
+  Overall             25.2           4.0           0.4
+
+STRICT   (parsed 8, unparsable 2, failed/missing 0)
+  Level 1      20.0 (-8.6)   10.0 (+4.9)    5.0 (+4.4)     10   [5.7, 51.0]
+  Overall      20.0 (-5.2)   10.0 (+6.0)    5.0 (+4.6)     10   [5.7, 51.0]
+
+PERMISSIVE   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1      20.0 (-8.6)   10.0 (+4.9)    5.0 (+4.4)     10   [5.7, 51.0]
+  Overall      20.0 (-5.2)   10.0 (+6.0)    5.0 (+4.6)     10   [5.7, 51.0]
+
+PERMISSIVE, NO FREE TEXT   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1      20.0 (-8.6)   10.0 (+4.9)    5.0 (+4.4)     10   [5.7, 51.0]
+  Overall      20.0 (-5.2)   10.0 (+6.0)    5.0 (+4.6)     10   [5.7, 51.0]
+
+DIAGNOSTIC ONLY: permissive + timestamps without [] accepted   (parsed 10, unparsable 0, failed/missing 0)
+  Level 1      20.0 (-8.6)   10.0 (+4.9)    5.0 (+4.4)     10   [5.7, 51.0]
+  Overall      20.0 (-5.2)   10.0 (+6.0)    5.0 (+4.6)     10   [5.7, 51.0]
+
+BASELINES (Acc.)
+  Level 1     always 'A'  10.0   chance  12.5
+  Overall     always 'A'  10.0   chance  12.5
+
+DIAGNOSTICS
+  answer sources (permissive): {"json_letter": {"n": 10, "correct": 2}}
+  stop causes: {"natural_stop": 10}
+  format, questions with: {"fully_well_formed": 8, "has_missing_brackets": 2}
+  format, timestamps: {"strict_ok": 16, "missing_brackets": 4}
+  letters, overall counts:
+    gt                       {"A": 1, "B": 1, "C": 1, "E": 1, "F": 2, "G": 3, "H": 1}
+    strict                   {"A": 1, "B": 1, "E": 2, "G": 2, "H": 2, "none": 2}
+    permissive               {"A": 1, "B": 1, "E": 2, "F": 1, "G": 3, "H": 2}
+    permissive_no_free_text  {"A": 1, "B": 1, "E": 2, "F": 1, "G": 3, "H": 2}
+    diag_no_brackets         {"A": 1, "B": 1, "E": 2, "F": 1, "G": 3, "H": 2}

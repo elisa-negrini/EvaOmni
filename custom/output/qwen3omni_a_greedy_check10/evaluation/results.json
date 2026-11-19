@@ -1,0 +1,636 @@
+{
+ "run": "qwen3omni_a_greedy_check10",
+ "scored": "2026-11-17T16:49:17+01:00",
+ "n_questions": 10,
+ "summary": {
+  "strict": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [0.0, 27.753]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [0.0, 27.753]
+   }
+  },
+  "permissive": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [0.0, 27.753]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [0.0, 27.753]
+   }
+  },
+  "permissive_no_free_text": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [0.0, 27.753]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [0.0, 27.753]
+   }
+  },
+  "diag_no_brackets": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [0.0, 27.753]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [0.0, 27.753]
+   }
+  }
+ },
+ "by_capability": {
+  "strict": {
+   "Event Binding": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Alignment": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 4,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  },
+  "permissive": {
+   "Event Binding": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Alignment": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 4,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  },
+  "permissive_no_free_text": {
+   "Event Binding": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Alignment": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 4,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  },
+  "diag_no_brackets": {
+   "Event Binding": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Temporal Alignment": {
+    "count": 3,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   },
+   "Entity Binding": {
+    "count": 4,
+    "Acc.": 0.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0
+   }
+  }
+ },
+ "baselines": {
+  "always_A": {
+   "Level 1": {
+    "n": 10,
+    "Acc.": 10.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [1.788, 40.415]
+   },
+   "Overall": {
+    "n": 10,
+    "Acc.": 10.0,
+    "C.G.": 0.0,
+    "B.G.": 0.0,
+    "Mean": 0.0,
+    "Thr@0.3": 0.0,
+    "Thr@0.5": 0.0,
+    "Thr@0.7": 0.0,
+    "Acc. 95% CI": [1.788, 40.415]
+   }
+  },
+  "chance": {"Level 1": {"n": 10, "Acc.": 12.5}, "Overall": {"n": 10, "Acc.": 12.5}}
+ },
+ "diagnostics": {
+  "parsing": {
+   "strict": {"parsed": 0, "unparsable": 10, "failed_or_missing": 0},
+   "permissive": {"parsed": 10, "unparsable": 0, "failed_or_missing": 0},
+   "permissive_no_free_text": {"parsed": 10, "unparsable": 0, "failed_or_missing": 0},
+   "diag_no_brackets": {"parsed": 10, "unparsable": 0, "failed_or_missing": 0}
+  },
+  "answer_sources": {
+   "json_letter": {"n": 10, "correct": 0, "letters": {"A": 1, "B": 1, "C": 1, "E": 2, "F": 3, "G": 2}}
+  },
+  "stop_causes": {"natural_stop": 10},
+  "format_errors": {
+   "n_questions": 10,
+   "questions_with": {"has_missing_brackets": 10, "missing_visual_evidence_list": 10},
+   "timestamps": {"missing_brackets": 10},
+   "example_qa_ids": {
+    "missing_brackets": [7, 45, 62, 190, 348, 416, 418, 459, 507, 854],
+    "has_missing_brackets": [7, 45, 62, 190, 348, 416, 418, 459, 507, 854],
+    "missing_visual_evidence_list": [7, 45, 62, 190, 348, 416, 418, 459, 507, 854]
+   }
+  },
+  "letters": {
+   "gt": {
+    "Overall": {"A": 1, "B": 1, "C": 1, "E": 1, "F": 2, "G": 3, "H": 1},
+    "Level 1": {"A": 1, "B": 1, "C": 1, "E": 1, "F": 2, "G": 3, "H": 1}
+   },
+   "strict": {"Overall": {"none": 10}, "Level 1": {"none": 10}},
+   "permissive": {
+    "Overall": {"A": 1, "B": 1, "C": 1, "E": 2, "F": 3, "G": 2},
+    "Level 1": {"A": 1, "B": 1, "C": 1, "E": 2, "F": 3, "G": 2}
+   },
+   "permissive_no_free_text": {
+    "Overall": {"A": 1, "B": 1, "C": 1, "E": 2, "F": 3, "G": 2},
+    "Level 1": {"A": 1, "B": 1, "C": 1, "E": 2, "F": 3, "G": 2}
+   },
+   "diag_no_brackets": {
+    "Overall": {"A": 1, "B": 1, "C": 1, "E": 2, "F": 3, "G": 2},
+    "Level 1": {"A": 1, "B": 1, "C": 1, "E": 2, "F": 3, "G": 2}
+   }
+  }
+ },
+ "input_mode": "a",
+ "unasked_evidence_scored_empty": ["visual_evidence"],
+ "given_modality": {
+  "modality": "audio",
+  "by_mode": {
+   "strict": {
+    "Overall": {
+     "n": 10,
+     "n_correct": 0,
+     "cov_grounded": 0.0,
+     "iou_grounded": 0.0,
+     "mean_cov_if_correct": 0.0,
+     "mean_iou_if_correct": 0.0
+    },
+    "Level 1": {
+     "n": 10,
+     "n_correct": 0,
+     "cov_grounded": 0.0,
+     "iou_grounded": 0.0,
+     "mean_cov_if_correct": 0.0,
+     "mean_iou_if_correct": 0.0
+    }
+   },
+   "permissive": {
+    "Overall": {
+     "n": 10,
+     "n_correct": 0,
+     "cov_grounded": 0.0,
+     "iou_grounded": 0.0,
+     "mean_cov_if_correct": 0.0,
+     "mean_iou_if_correct": 0.0
+    },
+    "Level 1": {
+     "n": 10,
+     "n_correct": 0,
+     "cov_grounded": 0.0,
+     "iou_grounded": 0.0,
+     "mean_cov_if_correct": 0.0,
+     "mean_iou_if_correct": 0.0
+    }
+   },
+   "permissive_no_free_text": {
+    "Overall": {
+     "n": 10,
+     "n_correct": 0,
+     "cov_grounded": 0.0,
+     "iou_grounded": 0.0,
+     "mean_cov_if_correct": 0.0,
+     "mean_iou_if_correct": 0.0
+    },
+    "Level 1": {
+     "n": 10,
+     "n_correct": 0,
+     "cov_grounded": 0.0,
+     "iou_grounded": 0.0,
+     "mean_cov_if_correct": 0.0,
+     "mean_iou_if_correct": 0.0
+    }
+   },
+   "diag_no_brackets": {
+    "Overall": {
+     "n": 10,
+     "n_correct": 0,
+     "cov_grounded": 0.0,
+     "iou_grounded": 0.0,
+     "mean_cov_if_correct": 0.0,
+     "mean_iou_if_correct": 0.0
+    },
+    "Level 1": {
+     "n": 10,
+     "n_correct": 0,
+     "cov_grounded": 0.0,
+     "iou_grounded": 0.0,
+     "mean_cov_if_correct": 0.0,
+     "mean_iou_if_correct": 0.0
+    }
+   }
+  }
+ },
+ "input": {
+  "n_questions": 10,
+  "n_recorded": 10,
+  "n_ok": 10,
+  "missing": 0,
+  "errors_by_type": {},
+  "prompt_tokens_min_max": [2619, 7864],
+  "video_tokens_min_max": [0, 0],
+  "audio_tokens_min_max": [2428, 7502],
+  "frames_min_max": null,
+  "video_seconds_min_max": [187.0, 577.05],
+  "audio_seconds_min_max": [186.75, 577.05],
+  "context_fraction_max": 0.12
+ },
+ "questions": [
+  {
+   "qa_id": 7,
+   "video_id": "344",
+   "level": 1,
+   "capability": "Event Binding",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 7181,
+   "n_output_tokens": 44,
+   "gt": {"answer": "G", "visual": [[119.0, 124.0]], "audio": [[119.0, 124.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "B", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "B", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "B", "visual": [], "audio": [[107.0, 110.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  },
+  {
+   "qa_id": 45,
+   "video_id": "275",
+   "level": 1,
+   "capability": "Temporal Alignment",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 6893,
+   "n_output_tokens": 40,
+   "gt": {"answer": "E", "visual": [[479.0, 482.0]], "audio": [[479.0, 482.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "G", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "G", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "G", "visual": [], "audio": [[307.0, 310.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  },
+  {
+   "qa_id": 62,
+   "video_id": "029",
+   "level": 1,
+   "capability": "Temporal Alignment",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 7864,
+   "n_output_tokens": 40,
+   "gt": {"answer": "F", "visual": [[60.0, 63.0]], "audio": [[58.0, 60.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "G", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "G", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "G", "visual": [], "audio": [[38.0, 40.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  },
+  {
+   "qa_id": 190,
+   "video_id": "202",
+   "level": 1,
+   "capability": "Entity Binding",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 2619,
+   "n_output_tokens": 40,
+   "gt": {"answer": "C", "visual": [[64.0, 66.0]], "audio": [[63.0, 65.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "E", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "E", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "E", "visual": [], "audio": [[62.0, 63.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  },
+  {
+   "qa_id": 348,
+   "video_id": "368",
+   "level": 1,
+   "capability": "Event Binding",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 2943,
+   "n_output_tokens": 40,
+   "gt": {"answer": "B", "visual": [[97.0, 99.0]], "audio": [[97.0, 100.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "F", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "F", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "F", "visual": [], "audio": [[62.0, 64.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  },
+  {
+   "qa_id": 416,
+   "video_id": "054",
+   "level": 1,
+   "capability": "Entity Binding",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 3145,
+   "n_output_tokens": 40,
+   "gt": {"answer": "G", "visual": [[56.0, 59.0]], "audio": [[56.0, 59.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "F", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "F", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "F", "visual": [], "audio": [[45.0, 46.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  },
+  {
+   "qa_id": 418,
+   "video_id": "340",
+   "level": 1,
+   "capability": "Event Binding",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 5187,
+   "n_output_tokens": 40,
+   "gt": {"answer": "F", "visual": [[52.0, 54.0]], "audio": [[52.0, 55.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "C", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "C", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "C", "visual": [], "audio": [[58.0, 60.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  },
+  {
+   "qa_id": 459,
+   "video_id": "383",
+   "level": 1,
+   "capability": "Temporal Alignment",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 3519,
+   "n_output_tokens": 40,
+   "gt": {"answer": "A", "visual": [[106.0, 116.0]], "audio": [[106.0, 112.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "F", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "F", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "F", "visual": [], "audio": [[91.0, 93.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  },
+  {
+   "qa_id": 507,
+   "video_id": "392",
+   "level": 1,
+   "capability": "Entity Binding",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 5351,
+   "n_output_tokens": 40,
+   "gt": {"answer": "G", "visual": [[30.0, 33.0]], "audio": [[30.0, 33.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "E", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "E", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "E", "visual": [], "audio": [[30.0, 32.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  },
+  {
+   "qa_id": 854,
+   "video_id": "053",
+   "level": 1,
+   "capability": "Entity Binding",
+   "status": "ok",
+   "answer_source": "json_letter",
+   "stop_cause": "natural_stop",
+   "prompt_tokens": 5297,
+   "n_output_tokens": 40,
+   "gt": {"answer": "H", "visual": [[197.0, 200.0]], "audio": [[197.0, 200.0]]},
+   "pred": {
+    "strict": null,
+    "permissive": {"answer": "A", "visual": [], "audio": []},
+    "permissive_no_free_text": {"answer": "A", "visual": [], "audio": []},
+    "diag_no_brackets": {"answer": "A", "visual": [], "audio": [[167.0, 170.0]]}
+   },
+   "scores": {
+    "strict": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "permissive_no_free_text": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0},
+    "diag_no_brackets": {"Acc.": 0, "C.G.": 0.0, "B.G.": 0.0}
+   }
+  }
+ ]
+}

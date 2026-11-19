@@ -1,0 +1,190 @@
+{
+ "qa_id": 62,
+ "video_id": "029",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-17T16:43:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 577.05,
+  "preprocess_s": 0.12,
+  "prompt_tokens": 281,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 281,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.004
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"G\"\n}"}
+}
+{
+ "qa_id": 854,
+ "video_id": "053",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-17T16:43:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 386.0,
+  "preprocess_s": 0.12,
+  "prompt_tokens": 199,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 199,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.003
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"C\"\n}"}
+}
+{
+ "qa_id": 416,
+ "video_id": "054",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-17T16:43:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 220.0,
+  "preprocess_s": 0.08,
+  "prompt_tokens": 207,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 207,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.003
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"F\"\n}"}
+}
+{
+ "qa_id": 190,
+ "video_id": "202",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-17T16:43:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 187.0,
+  "preprocess_s": 0.03,
+  "prompt_tokens": 110,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 110,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.002
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"E\"\n}"}
+}
+{
+ "qa_id": 45,
+ "video_id": "275",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-17T16:43:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 510.13,
+  "preprocess_s": 0.18,
+  "prompt_tokens": 180,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 180,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.003
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"G\"\n}"}
+}
+{
+ "qa_id": 418,
+ "video_id": "340",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-17T16:43:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 379.31,
+  "preprocess_s": 0.1,
+  "prompt_tokens": 175,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 175,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.003
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"C\"\n}"}
+}
+{
+ "qa_id": 7,
+ "video_id": "344",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-17T16:43:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 530.05,
+  "preprocess_s": 0.16,
+  "prompt_tokens": 209,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 209,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.003
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"B\"\n}"}
+}
+{
+ "qa_id": 348,
+ "video_id": "368",
+ "level": 1,
+ "capability": "Event Binding",
+ "time": "2026-11-17T16:43:15+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 204.25,
+  "preprocess_s": 0.06,
+  "prompt_tokens": 206,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 206,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.003
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"E\"\n}"}
+}
+{
+ "qa_id": 459,
+ "video_id": "383",
+ "level": 1,
+ "capability": "Temporal Alignment",
+ "time": "2026-11-17T16:43:16+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 247.0,
+  "preprocess_s": 0.02,
+  "prompt_tokens": 231,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 231,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.004
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"F\"\n}"}
+}
+{
+ "qa_id": 507,
+ "video_id": "392",
+ "level": 1,
+ "capability": "Entity Binding",
+ "time": "2026-11-17T16:43:16+01:00",
+ "status": "ok",
+ "input": {
+  "video_seconds": 395.0,
+  "preprocess_s": 0.02,
+  "prompt_tokens": 136,
+  "video_tokens": 0,
+  "audio_tokens": 0,
+  "text_and_special_tokens": 136,
+  "video_tokens_per_temporal_grid": null,
+  "context_fraction": 0.002
+ },
+ "output": {"stop_cause": "natural_stop", "n_output_tokens": 10, "raw_response": "{\n  \"answer\": \"F\"\n}"}
+}
