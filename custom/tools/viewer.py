@@ -29,6 +29,7 @@ from pathlib import Path
 
 import altair as alt
 import pandas as pd
+from scipy.stats import binomtest
 import soundfile as sf
 import streamlit as st
 
@@ -312,6 +313,23 @@ def question_scores(name: str) -> dict[str, dict[int, dict]]:
     return out
 
 
+def stars(p: float) -> str:
+    return "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else "n.s."
+
+
+def vs_control(ev: str, ctrl: str, parser: str) -> tuple[float, float]:
+    """Acc. of an evidence run minus its control run (points), and the exact McNemar p-value.
+    Paired over the same questions, without the control_infeasible ones (no random mask there)."""
+    a, b = question_scores(ev)[parser], question_scores(ctrl)[parser]
+    qs = [q for q in a if q in b and q not in question_scores(ctrl)["infeasible"]]
+    ok_a = {q: a[q].get("Acc.") == 1 for q in qs}
+    ok_b = {q: b[q].get("Acc.") == 1 for q in qs}
+    only_a = sum(ok_a[q] and not ok_b[q] for q in qs)
+    only_b = sum(ok_b[q] and not ok_a[q] for q in qs)
+    p = binomtest(only_a, only_a + only_b).pvalue if only_a + only_b else 1.0
+    return 100 * (only_a - only_b) / len(qs), p
+
+
 def effects_section(rows: list[dict]):
     st.divider()
     st.header("Effect of the masking")
@@ -339,17 +357,29 @@ def effects_section(rows: list[dict]):
 
     st.subheader("1 · Change vs baseline")
     st.caption(f"{parser}, all 1027 questions, in %. Δ = run − baseline, in points: "
-               ":green[**green**] = better than the baseline, :red[**red**] = worse.")
+               ":green[**green**] = better than the baseline, :red[**red**] = worse. "
+               "*Δ Acc. vs control* = evidence run − random run with the same fill and repeat (same questions, "
+               "without the 7 where the control mask did not fit); exact McNemar test on the questions that "
+               "change outcome: \\* p < 0.05, \\*\\* p < 0.01, \\*\\*\\* p < 0.001, n.s. = not significant.")
     tab = [{"run": "baseline (no masking)", **{k: base[f"{parser} {k}"] for k in ("Acc.", "C.G.", "B.G.")}}]
     for r in runs:
         tab.append({"run": f"{cond(r)} · {r['repeat']}",
                     **{c: v for k in ("Acc.", "C.G.", "B.G.")
                        for c, v in ((k, r[f"{parser} {k}"]), (f"Δ {k}", r[f"{parser} {k}"] - base[f"{parser} {k}"]))}})
-    t1 = pd.DataFrame(tab).set_index("run")[["Acc.", "Δ Acc.", "C.G.", "Δ C.G.", "B.G.", "Δ B.G."]]
-    dcols = ["Δ Acc.", "Δ C.G.", "Δ B.G."]
-    num = t1[dcols].copy()
+    ctrl = {(r["filled with"], r["repeat"]): r["run"] for r in runs if r["audio masked"] != "evidence"}
+    vc = {"baseline (no masking)": (None, None)}
+    for r in runs:
+        c = ctrl.get((r["filled with"], r["repeat"]))
+        vc[f"{cond(r)} · {r['repeat']}"] = vs_control(r["run"], c, parser) if r["audio masked"] == "evidence" and c else (None, None)
+    t1 = pd.DataFrame(tab).set_index("run")
+    t1["Δ Acc. vs control"] = [vc[i][0] for i in t1.index]
+    t1 = t1[["Acc.", "Δ Acc.", "Δ Acc. vs control", "C.G.", "Δ C.G.", "B.G.", "Δ B.G."]]
+    dcols = ["Δ Acc.", "Δ Acc. vs control", "Δ C.G.", "Δ B.G."]
+    num = t1[dcols].astype(float)
     for c in dcols:  # as text: streamlit shows "None" for a missing number (baseline row)
         t1[c] = ["—" if pd.isna(v) else f"{v:+.1f}" for v in num[c]]
+    t1["Δ Acc. vs control"] = [v if v == "—" else f"{v} {stars(vc[i][1])}"
+                               for i, v in zip(t1.index, t1["Δ Acc. vs control"])]
     st.dataframe(t1.style.format("{:.1f}", subset=["Acc.", "C.G.", "B.G."])
                  .apply(lambda col: [signed_color(v) for v in num[col.name]], subset=dcols)
                  .set_properties(subset=dcols, **{"text-align": "right"}),
