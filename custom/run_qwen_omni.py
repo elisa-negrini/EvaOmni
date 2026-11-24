@@ -27,6 +27,12 @@ each question, the audio evidence intervals (or, as a control, random segments o
 the same lengths) are replaced by silence or noise on a copy of the waveform, just
 before the request. Frames, prompt and the rest of the audio are as in av.
 
+Video masking (--video-mask evidence / random, av only; custom/video_mask.py): for
+each question, the frames of the visual evidence intervals (or, as a control, random
+segments of the same lengths) are replaced by black or Gaussian noise on a copy of
+the frame tensor, widened to whole frame pairs. Audio, prompt, number of frames and
+the other frames are as in av. Not combinable with --audio-mask (for now).
+
 Run layout (custom/output/<run_name>/):
   info.txt           [run] + [settings] (settings compared on --resume), then
                      resume / finish / scoring lines appended
@@ -60,6 +66,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import audio_mask
+import video_mask
 from runinfo import OUTPUT_FILE, append_record, format_section, load_outputs, read_run_meta
 
 # qwen_omni_utils reads the video's audio through audioread, which calls the
@@ -279,6 +286,8 @@ def build_settings(args, records, qa_ids) -> dict:
         settings["modality_ablation"] = {k: v for k, v in settings["modality_ablation"].items() if v is not None}
     if args.audio_mask != "none":
         settings["audio_mask"] = audio_mask.settings_entry(args.audio_mask, args.mask_fill, args.mask_pad)
+    if args.video_mask != "none":
+        settings["video_mask"] = video_mask.settings_entry(args.video_mask, args.video_fill, args.video_mask_pad)
     # Determinism options (custom/run_determinism.sh); added only when used.
     if args.no_prefix_caching:
         settings["enable_prefix_caching"] = False
@@ -444,7 +453,9 @@ def _forward_args(args) -> list[str]:
            "--max-model-len", str(args.max_model_len), "--gpu-memory-utilization",
            str(args.gpu_memory_utilization), "--max-num-seqs", str(args.max_num_seqs),
            "--batch-size", str(args.batch_size), "--constrained", args.constrained,
-           "--audio-mask", args.audio_mask, "--mask-fill", args.mask_fill, "--mask-pad", str(args.mask_pad)]
+           "--audio-mask", args.audio_mask, "--mask-fill", args.mask_fill, "--mask-pad", str(args.mask_pad),
+           "--video-mask", args.video_mask, "--video-fill", args.video_fill,
+           "--video-mask-pad", str(args.video_mask_pad)]
     if args.stats_only:
         out.append("--stats-only")
     if args.no_prefix_caching:
@@ -530,8 +541,12 @@ def worker(args) -> None:
         if want_audio:
             meta.update({"audio_seconds": round(len(audios[0]) / 16000, 2) if audios else 0.0,
                          "audio_peak": float(abs(audios[0]).max()) if audios and len(audios[0]) else 0.0})
+        times = None
+        if args.video_mask != "none":
+            # real timestamp of each frame, for video_mask (not stored: one per frame)
+            times = video_mask.frame_times(path, FPS)
         meta["preprocess_s"] = round(time.time() - t, 2)
-        return audios, videos, meta
+        return audios, videos, meta, times
 
     def build_request(rec, audios, videos):
         prompt = template.format(question=rec["question"], options=rec["options"])
@@ -647,7 +662,7 @@ def worker(args) -> None:
 
     for vid in videos_order:
         try:
-            audios, videos, meta = futures.pop(vid).result()
+            audios, videos, meta, times = futures.pop(vid).result()
         except Exception:  # noqa: BLE001
             err = traceback.format_exc()
             for rec in by_video[vid]:
@@ -658,13 +673,18 @@ def worker(args) -> None:
                 futures[videos_order[next_i]] = pool.submit(preprocess, videos_order[next_i])
                 next_i += 1
         for rec in by_video[vid]:
-            q_audios, q_meta = audios, meta
+            q_audios, q_videos, q_meta = audios, videos, meta
             if args.audio_mask != "none":
                 # per-question copy; `audios` is shared by all questions of this video
                 masked, info = audio_mask.mask_for_question(rec, audios[0], args.audio_mask,
                                                             args.mask_fill, args.mask_pad)
                 q_audios, q_meta = [masked], {**meta, "audio_mask": info}
-            inputs, sparams, sp = build_request(rec, q_audios, videos)
+            if args.video_mask != "none":
+                # per-question copy; `videos` is shared by all questions of this video
+                masked, info = video_mask.mask_for_question(rec, videos[0], times, args.video_mask,
+                                                            args.video_fill, args.video_mask_pad)
+                q_videos, q_meta = [masked], {**meta, "video_mask": info}
+            inputs, sparams, sp = build_request(rec, q_audios, q_videos)
             batch.append((rec, inputs, sparams, q_meta, sp))
             if len(batch) >= args.batch_size:
                 flush(batch)
@@ -694,6 +714,12 @@ def main():
                          "lengths outside it (control); see custom/audio_mask.py")
     ap.add_argument("--mask-fill", default="silence", choices=list(audio_mask.FILLS))
     ap.add_argument("--mask-pad", type=float, default=1.0, help="seconds added on each side of the evidence")
+    ap.add_argument("--video-mask", default="none", choices=["none", *video_mask.TARGETS],
+                    help="av only: mask the frames of the question's visual evidence, or random segments of "
+                         "the same lengths outside it (control); see custom/video_mask.py")
+    ap.add_argument("--video-fill", default="black", choices=list(video_mask.FILLS))
+    ap.add_argument("--video-mask-pad", type=float, default=1.0,
+                    help="seconds added on each side of the visual evidence")
     ap.add_argument("--max-tokens", type=int, default=16384)
     ap.add_argument("--max-model-len", type=int, default=65536)
     ap.add_argument("--stats-only", action="store_true",
@@ -733,6 +759,10 @@ def main():
         ap.error("--constrained json has a video+audio schema; not available with --input-mode v/a/t")
     if args.audio_mask != "none" and args.input_mode != "av":
         ap.error("--audio-mask is only available with --input-mode av")
+    if args.video_mask != "none" and args.input_mode != "av":
+        ap.error("--video-mask is only available with --input-mode av")
+    if args.video_mask != "none" and args.audio_mask != "none":
+        ap.error("--video-mask and --audio-mask together are not supported (yet)")
     if args._worker is not None:
         worker(args)
     else:

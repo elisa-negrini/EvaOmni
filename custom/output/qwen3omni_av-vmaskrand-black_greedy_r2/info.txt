@@ -1,0 +1,59 @@
+EvaOmni run: qwen3omni_av-vmaskrand-black_greedy_r2
+Video masking control run 2 of 2: random segments (evidence lengths) replaced by black, all 1027 questions; greedy, max_tokens 2048, pad 1 s, frame pairs; otherwise as qwen3omni_av_greedy_maxtok-2048
+
+[run]
+run_name                  : "qwen3omni_av-vmaskrand-black_greedy_r2"
+description               : "Video masking control run 2 of 2: random segments (evidence lengths) replaced by black, all 1027 questions; greedy, max_tokens 2048, pad 1 s, frame pairs; otherwise as qwen3omni_av_greedy_maxtok-2048"
+started                   : "2026-11-23T15:21:12+01:00"
+command                   : "/home/elisa.negrini/miniconda3/envs/av_env/bin/python custom/run_qwen_omni.py --run-name qwen3omni_av-vmaskrand-black_greedy_r2 --video-mask random --video-fill black --subset full --input-mode av --decoding greedy --max-tokens 2048 --video-mask-pad 1.0 --description 'Video masking control run 2 of 2: random segments (evidence lengths) replaced by black, all 1027 questions; greedy, max_tokens 2048, pad 1 s, frame pairs; otherwise as qwen3omni_av_greedy_maxtok-2048'"
+host                      : "coruscant"
+python                    : "3.12.13"
+gpus                      : ["0, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB", "1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB", "2, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB", "3, NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB"]
+num_workers               : 4
+gpu_memory_utilization    : 0.8
+batch_size                : 4
+git_commit                : "2adf1442305743a6cef363495c12216ce229444c"
+originals_unmodified      : true
+git_status_outside_custom : ""
+
+[settings]
+model                     : "Qwen/Qwen3-Omni-30B-A3B-Instruct"
+model_revision            : "26291f793822fb6be9555850f06dfe95f2d7e695"
+engine                    : "vllm.LLM (offline, V1 engine, thinker only)"
+dtype                     : "bfloat16"
+library_versions          : {"vllm": "0.17.1", "torch": "2.10.0", "transformers": "4.57.6", "numpy": "2.2.6", "qwen-omni-utils": "0.0.9", "librosa": "0.11.0", "av": "17.0.0", "decord": "0.6.0"}
+annotation                : "data/test_file.json"
+annotation_sha256         : "b35ab6e7b34b59ea522278d16143ffc27674f1e8246f24673fa02a21df80144b"
+subset                    : "full"
+subset_n                  : 1027
+subset_qa_ids_sha256      : "c7027daa9dd1b806770f733c718a362ca52b5e588c98f1d939a9308bea8d4867"
+video_dir                 : "/home/elisa.negrini/av-viewer/data/EvaOmni/resized_video"
+input_mode                : "av"
+use_audio_in_video        : true
+fps                       : 1.0
+video_frame_processing    : "qwen_omni_utils.process_mm_info defaults (image_patch_size=14, FPS clamp to all frames, bicubic resize to multiples of 28), then the HF Qwen3-Omni video processor inside vLLM (patch 16, merge 2)"
+time_encoding             : "vLLM 0.17.1 default second_per_grid_ts=2.0 s per temporal grid (temporal_patch_size=2 at 1 FPS) x position_id_per_seconds=13"
+system_prompt             : null
+message_order             : "video first, then question text"
+prompt_key                : "video_audio"
+prompt_sha256             : "eb7a65b9e0b541b77d935d3631f12fde2f5d16c76f50b3e503abacbcf5e69149"
+prompt_fill               : "PROMPTS['video_audio'].format(question=rec['question'], options=rec['options'])"
+decoding                  : "greedy"
+sampling_params           : {"temperature": 0.0, "max_tokens": 2048}
+seed                      : 1234
+seed_scheme               : "LLM(seed=seed) as in the model card, plus per-request SamplingParams(seed=sha256(f'{seed}-{qa_id}')) when sampling"
+max_model_len             : 65536
+limit_mm_per_prompt       : {"image": 0, "video": 1, "audio": 1}
+mm_processor_cache_gb     : 0
+mm_processor_cache_reason : "vLLM 0.17.1 bug: on a processor-cache hit the video item is None and Qwen3-Omni's _maybe_apply_prompt_updates then treats use_audio_in_video as False (assertion on the audio placeholder). Cache disabled; KV prefix caching stays on."
+enable_prefix_caching     : true
+max_num_seqs              : 1
+max_num_seqs_reason       : "vLLM 0.17.1 bug: merge_interleaved_embeddings (use_audio_in_video) separates video/audio embeddings by token counts only, which breaks when one engine step holds multimodal embeddings of >1 request. max_num_seqs=1 = one request per step (also makes greedy independent of batch composition)."
+long_video_policy         : "no truncation, no frame dropping: prompts longer than max_model_len are recorded as status=error (error_type=prompt_too_long) and score zero"
+stats_only                : false
+video_mask                : {"target": "random", "fill": "black", "pad_s": 1.0, "seed": 20261123, "where": "custom/video_mask.py, on a per-question copy of the frame tensor from qwen_omni_utils (after its resize), just before the request; same number of frames, audio untouched", "frame_time": "real timestamp of each kept frame: indices from qwen_omni_utils' own calculate_video_frame_range/smart_nframes + linspace(...).round(), / source fps", "segments": "random: same number and lengths as the padded evidence, uniform positions outside it and non-overlapping, seed from qa_id; if they do not fit, no mask and control_infeasible=true", "pair_alignment": "segments widened outwards to whole frame pairs (temporal_patch_size 2)", "fill_how": "zeros"}
+
+Finished     : 2026-11-23T16:03:14+01:00  (this session 42.0 min; since first start 42.0 min)
+Questions    : 1027  succeeded 1023  failed 4 {'prompt_too_long': 4}
+
+Scored       : 2026-11-23T16:03:14+01:00  -> evaluation/

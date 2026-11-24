@@ -582,3 +582,65 @@ Each configuration was run twice in separate processes (custom/run_determinism.s
 - **Batch-invariant mode does not help**, so the cause is not batch composition or kernel choice in the language model.
 
 Next step: custom/run_probe.sh with custom/tools/determinism_probe.py. It fingerprints every stage (CPU inputs, vision/audio encoder input and output, language-model input and output, first-token logprobs) in two processes, to find the first stage that differs. A second pair runs with enforce_eager.
+
+### Exact recreation of av_env (2026-11-20)
+
+`custom/env/create_av_env_exact.sh` rebuilds av_env exactly as it was on coruscant on 2026-11-20:
+
+- `custom/env/av_env_conda.txt` = `conda list --explicit --md5` (Python and ffmpeg, all builds conda-forge);
+- `custom/env/av_env_pip.txt` = `pip freeze`, 230 packages.
+
+Compared with the 13-11 recipe, the main versions are the same. The difference is that the dependencies resolved by the extra packages (audioread 3.1.0, soundfile 0.14.0, soxr, pooch, scikit-learn, ...) and ffmpeg 9.0.2 are now pinned too.
+
+## Visual-evidence masking (2026-11-23)
+
+- Question: does the model use the annotated visual evidence? Same design as the audio
+  masking, on the frames: for each question the frames of the visual evidence are
+  replaced (not cut) on a copy of the frame tensor from qwen_omni_utils (T x 3 x H x W,
+  after its resize, float with integer values), just before the request
+  (`custom/video_mask.py`, `--video-mask` in `run_qwen_omni.py`, av only, not
+  combinable with `--audio-mask` for now). Number of frames, video tokens, timing,
+  audio and prompt are as in av. `[settings]` of av and audio-mask runs unchanged
+  (checked on qwen3omni_av_greedy_maxtok-2048 and qwen3omni_av-maskev-noise_greedy_r1).
+- Why replace and not delete (as the CVPR'27 TGR/ReGAP draft does, keeping the
+  original timestamps of the remaining frames): in vLLM 0.17.1 the video time
+  position is `arange(grid_t) * second_per_grid_ts * 13`, one step per video, so
+  deleted frames would shift every later frame back in time, misalign it from the
+  (intact, interleaved) audio, and break the timestamps the model writes. Keeping
+  the gaps would need a patch to vLLM's M-RoPE positions.
+- Frame time: the real timestamp of each kept frame, from qwen_omni_utils' own
+  `calculate_video_frame_range` / `smart_nframes` + `linspace(...).round()`
+  (decord header only). Frame k != second k in general: 201 of 392 videos have an
+  odd source frame count, so indices drift by up to 1 frame (video 179: frame 228
+  is at 229 s); video 036 is capped at 768 frames. Note that vLLM itself assumes
+  exactly 2 s per frame pair (see "Long videos"): the mask follows the content.
+- Segments: frame k is hit if `start - pad <= t_k < end + pad` (pad 1 s,
+  `--video-mask-pad`), for each `evidence.visual` interval; then **widened outwards
+  to whole frame pairs** (temporal_patch_size 2), so every temporal token is either
+  fully masked or fully intact; merged. Example qa 1 (GT [03:50,03:59]): frames
+  228..239 = 229..240 s. On all 1027 questions: median 10 masked frames (mean 16.6,
+  max 252), median 2.6% of the video (max 56%); every question has evidence frames.
+- Fill: `black` (zeros) or `noise` (white Gaussian per pixel and per frame, with the
+  per-channel mean/std of the whole original video, rounded to 3 decimals; seed from
+  qa_id; rounded to integers, clip [0, 255]). No fade. The noise is far out of
+  distribution for the vision encoder ("TV snow"); it is still a valid condition
+  because the random control uses the same fill: evidence vs control isolates the
+  removal of that information. Comparing black vs noise directly is NOT meaningful.
+- Control (`--video-mask random`): same number of segments and same lengths (in
+  frame pairs), uniformly placed outside the padded evidence and not overlapping
+  (the placement code of audio_mask.py); seed from qa_id only, so positions are
+  identical for black and noise and across repeats. **4 questions** cannot fit them
+  (qa 140, 247, 754, 792; evidence 41-56% of the video): nothing is masked and the
+  record says `control_infeasible: true`. Exclude them from evidence-vs-control
+  comparisons.
+- Each record has `input.video_mask`: segments (frame indices and timestamps of the
+  first and last masked frame), masked frames and fraction, noise mean/std, and
+  the sha256 of the whole masked tensor. Cost on CPU: up to ~3.5 s per question
+  (stats + hash of 1.2 GB for 768 frames); the per-question copy is at most 1.2 GB.
+- Checks: `custom/selftest_video_mask.py` (synthetic, frame indices identical to
+  qwen_omni_utils on 60/293/779-frame videos, pair alignment, fills, control);
+  on real videos (179, 293, 036) through `process_mm_info`: timestamps match the
+  frame count, frames outside the segments identical.
+- Runs: `custom/run_videomask.sh`, 2 tests on check10-l1, then 4 conditions
+  (evidence/random x black/noise) x 2 repeats; reference: the two greedy av runs.
+  No viewer support yet.
